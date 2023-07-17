@@ -1,0 +1,9 @@
+$transition: .3s;
+$minizoom: scale(1.1);
+$difuminado: blur(3px);
+
+@mixin imagenes ($width, $height, $object) {
+    width: $width;
+    height: $height;
+    object-fit: $object;
+}

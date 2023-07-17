@@ -1,0 +1,68 @@
+.menu-icon {
+    display: none;
+}
+
+.navbar {
+    background: #2410a8;
+    color: #333;
+    padding: 0.5rem 0;
+    width: 100%;
+    height: auto;
+    border-bottom: solid 1px black;
+    position: fixed;
+    z-index: 9999;
+    
+
+    a {
+        color: #333;
+    }
+}
+
+.logo2{
+    width: 30px;
+    height: auto;
+    border-radius: 100%;
+}
+
+.logo-container {
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listaNavbar {
+    a {
+        text-decoration: none;
+        font-family: "Oswald";
+        color: rgb(255, 255, 255);
+    }
+}
+
+.navigation ul {
+    margin: 0px;
+    padding: 0px;
+    flex-wrap: wrap;
+    
+    li {
+        display: inline-block;
+        flex-wrap: wrap;
+
+        a {
+            display: block;
+            padding: 0.5rem 1rem;
+
+            &:hover {
+                color: #ccff00;
+                background-color: #030034;
+                border-radius: 5px;
+                transition: all $transition linear;
+            }
+        }
+    }
+}
