@@ -151,7 +151,7 @@ h6 {
   align-items: center;
   color: rgba(238, 238, 238, 0.9333333333);
   border-radius: 14px;
-  background: linear-gradient(to top, rgba(43, 43, 255, 0.879), rgba(0, 0, 255, 0.304));
+  background: linear-gradient(to top, rgba(0, 0, 75, 0.879), rgba(0, 0, 255, 0.304));
 }
 .grilla__hijo img {
   object-fit: cover;
