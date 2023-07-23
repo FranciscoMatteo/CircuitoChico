@@ -4,6 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&family=Oswald:wght@700&display=swap');
 // OSWALD
 @import url('https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&family=Oswald:wght@700&display=swap');
+// LUNASIMA
+@import url('https://fonts.googleapis.com/css2?family=Lunasima:wght@700&display=swap');
+// HIND
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap');
 
 * {
     margin: 0px;
@@ -17,4 +21,8 @@ body {
 
 h1 {
     display: none;
+}
+
+div a p {
+    color: white;
 }
