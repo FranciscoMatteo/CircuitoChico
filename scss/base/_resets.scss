@@ -8,6 +8,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lunasima:wght@700&display=swap');
 // HIND
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap');
+//POPPINS
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 
 * {
     margin: 0px;
@@ -17,6 +20,7 @@
 
 body {
     background-color: rgb(0, 0, 60);
+    min-height: 100vh;
 }
 
 h1 {
