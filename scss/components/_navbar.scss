@@ -22,26 +22,15 @@
     
 }
 
-.navbar {
-
-    margin-right: 3rem;
-
-    a {
-        font-size: 1rem;
-        color: #fff;
-        text-decoration: none;
-        font-weight: 500;
-        font-family: 'Poppins', sans-serif;
-        justify-content: center;
-        padding: .3rem 1rem .3rem 1rem;
-
-        &:hover {
-            color: #ccff00;
-            background-color: #030034;
-            border-radius: 7px;
-            transition: all 0.3s linear;
-        }
-    }
+.navbar a {
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 1rem;
+    font-family: 'Poppins', sans-serif;
+    padding: .4rem;
+    
 }
 
 
