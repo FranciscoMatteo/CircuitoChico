@@ -13,18 +13,6 @@ body {
   background-color: rgb(0, 0, 60);
   min-height: 100vh;
 }
-.efecto{
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(to top, rgba(0, 0, 60, 0.721), rgba(0, 0, 60, 0));
-}
-.body2{ 
-  min-height: 100vh;
-  border-top-left-radius: 3%;
-  border-top-right-radius: 3%;
-  background-color: rgb(0, 0, 60);
-}
 
 h1 {
   display: none;
@@ -57,14 +45,23 @@ div a p {
   margin: auto;
 }
 
+.navbar {
+  margin-right: 3rem;
+}
 .navbar a {
   font-size: 1rem;
   color: #fff;
   text-decoration: none;
   font-weight: 500;
-  margin-left: 1rem;
   font-family: "Poppins", sans-serif;
-  padding: 0.4rem;
+  justify-content: center;
+  padding: 0.3rem 1rem 0.3rem 1rem;
+}
+.navbar a:hover {
+  color: #ccff00;
+  background-color: #030034;
+  border-radius: 7px;
+  transition: all 0.3s linear;
 }
 
 /*.menu-icon {
@@ -146,17 +143,15 @@ div a p {
 .fondo {
   display: flex;
   width: 100%;
-  height: 90vh;
- /* background: linear-gradient(to top, rgba(0, 0, 75, 0.80), rgba(0, 0, 255, 0.304));*/
+  height: 100vh;
 }
 .fondo .carousel {
   margin-top: 1.5%;
   width: 100%;
   height: 100vh;
-  position: fixed;
+  position: absolute;
   animation: slide-fade 15s infinite;
   opacity: 0;
-  z-index: -1;
 }
 .fondo .carousel:nth-child(1) {
   animation-delay: 0s;
@@ -188,8 +183,7 @@ div a p {
   }
 }
 h2 {
-  position: relative;
-  top: 20px;
+  margin-top: 5%;
   font-family: "Oswald";
   color: rgb(255, 255, 255);
   font-size: 80px;
@@ -202,9 +196,8 @@ h2:hover {
 h6 {
   font-family: "Oswald";
   color: rgb(255, 255, 255);
+  margin-bottom: 3%;
   font-size: 20px;
-  position: relative;
-  padding: 20px;
 }
 
 .torneo1 {
