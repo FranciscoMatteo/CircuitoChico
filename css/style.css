@@ -14,20 +14,6 @@ body {
   min-height: 100vh;
 }
 
-.efecto {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(to top, rgba(0, 0, 60, 0.721), rgba(0, 0, 60, 0));
-}
-.body2 {
-  min-height: 100vh;
-  height: 1000px;
-  border-top-left-radius: 3%;
-  border-top-right-radius: 3%;
-  background-color: rgb(0, 0, 60);
-}
-
 h1 {
   display: none;
 }
@@ -35,6 +21,12 @@ h1 {
 div a p {
   color: white;
 }
+
+/*------------------------------------------------------------------------------------*/
+/*----------------------------------------HEADER--------------------------------------*/
+/*----------------------------------------NAVBAR--------------------------------------*/
+/*----------------------------------------RESPON--------------------------------------*/
+/*------------------------------------------------------------------------------------*/
 
 .header {
   position: fixed;
@@ -76,6 +68,55 @@ div a p {
   background-color: #030034;
   border-radius: 7px;
   transition: all 0.3s linear;
+}
+
+@media (max-width: 540px) {
+  #check:checked ~ .listaNavbar {
+    height: 15rem;
+  }
+  #check:checked ~ .icons #menu-icon {
+    display: none;
+  }
+  #check:checked ~ .icons #close-icon {
+    display: block;
+  }
+  .logo2 {
+    display: none;
+  }
+  .icons {
+    display: inline-flex;
+    width: 25px;
+    height: auto;
+    margin-right: 20px;
+  }
+  #close-icon {
+    display: none;
+  }
+  #check {
+    right: 20px;
+  }
+  .navigation {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 0px 0px 10% 10%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  }
+  .navigation .listaNavbar {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+    margin: 0.5rem;
+  }
+  .navigation .listaNavbar li a:hover {
+    color: white;
+    background-color: transparent;
+  }
 }
 
 /*.menu-icon {
@@ -154,32 +195,58 @@ div a p {
 .checkbox {
     display: none;
 }*/
+
+/*------------------------------------------------------------------------------------*/
+/*----------------------------------------FONDO---------------------------------------*/
+/*----------------------------------------FONDO---------------------------------------*/
+/*----------------------------------------FONDO---------------------------------------*/
+/*------------------------------------------------------------------------------------*/
+
+.efecto {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to top, rgba(0, 0, 60, 0.721), rgba(0, 0, 60, 0));
+}
+
+.body2 {
+  min-height: 100vh;
+  height: 1000px;
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
+  background-color: rgb(0, 0, 60);
+}
+
 .fondo {
   display: flex;
   width: 100%;
   height: 90vh;
-  /* background: linear-gradient(to top, rgba(0, 0, 75, 0.80), rgba(0, 0, 255, 0.304));*/
-  height: 100vh;
 }
+
 .fondo .carousel {
   margin-top: 1.5%;
   width: 100%;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   animation: slide-fade 15s infinite;
   opacity: 0;
+  z-index: -1;
 }
+
 .fondo .carousel:nth-child(1) {
   animation-delay: 0s;
 }
+
 .fondo .carousel:nth-child(2) {
   animation-delay: 5s;
 }
+
 .fondo .carousel:nth-child(3) {
   animation-delay: 10s;
 }
+
 .fondo img {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   object-fit: cover;
 }
@@ -198,8 +265,16 @@ div a p {
     opacity: 0;
   }
 }
+
+/*------------------------------------------------------------------------------------*/
+/*----------------------------------------MAIN----------------------------------------*/
+/*----------------------------------------MAIN----------------------------------------*/
+/*----------------------------------------MAIN----------------------------------------*/
+/*------------------------------------------------------------------------------------*/
+
 h2 {
-  margin-top: 5%;
+  position: relative;
+  top: 20px;
   font-family: "Oswald";
   color: rgb(255, 255, 255);
   font-size: 80px;
@@ -212,156 +287,97 @@ h2:hover {
 h6 {
   font-family: "Oswald";
   color: rgb(255, 255, 255);
-  margin-bottom: 3%;
   font-size: 20px;
+  position: relative;
+  padding: 20px;
 }
 
-.torneo1 {
+/*--------------------- --------------------------------- --------------------------------*/
+/*--------------------- -------------------GRILLA-------- --------------------------------*/
+/*--------------------- --------------------------------- --------------------------------*/
+
+.torneo150723 {
   display: grid;
   max-width: 60%;
+  height: 90vh;
   grid-template-columns: repeat(4, 2fr);
   grid-template-rows: repeat(3, 150px);
-  grid-template-areas: "area1 area1 area2 area2" "area1 area1 area2 area2" "area3 area3 area3 area3";
+  grid-template-areas:
+    "area1 area1 area2 area2"
+    "area1 area1 area2 area2"
+    "area3 area3 area3 area3";
   gap: 30px;
-  justify-items: center;
   margin-left: auto;
   margin-right: auto;
 }
 
-.grillat1__hijo {
+.grid-hijo {
   position: relative;
   overflow: hidden;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgba(238, 238, 238, 0.9333333333);
   border-radius: 14px;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 75, 0.879),
-    rgba(0, 0, 255, 0.304)
-  );
-}
-.grillat1__hijo img {
-  object-fit: contain;
-  transition: 0.8s ease;
-  width: 600px;
-  height: auto;
-}
-.grillat1__hijo .galeria_1 {
-  width: 100%;
-  height: auto;
 }
 
-.hovermover:hover > img {
+.grid-hijo:hover > img {
   transform: scale(1.1);
   opacity: 0.7;
 }
 
-.g1 {
-  grid-area: area1;
-}
-
-.g2 {
-  grid-area: area2;
-}
-
-.g3 {
-  grid-area: area3;
-}
-
-.parrafo {
+.grid-texto {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  margin: 0;
-  padding: 20px 25px;
   font-size: xx-large;
-  z-index: 9999;
   font-family: "Lunasima";
+  color: #fff;
+  bottom: 0;
+  left: 20px;
 }
-
-.parrafo_centrado {
+.grid-texto-center {
   position: absolute;
+  font-size: xx-large;
+  font-family: "Lunasima";
+  color: #fff;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
-  line-height: 1;
-  margin: 0;
-  padding: 10px 20px;
-  font-size: xx-large;
-  font-family: "Lunasima";
 }
 
-@media (max-width: 540px) {
-  #check:checked ~ .listaNavbar {
-    height: 15rem;
-  }
-  #check:checked ~ .icons #menu-icon {
-    display: none;
-  }
-  #check:checked ~ .icons #close-icon {
-    display: block;
-  }
-  .logo2 {
-    display: none;
-  }
-  .icons {
-    display: inline-flex;
-    width: 25px;
-    height: auto;
-    margin-right: 20px;
-  }
-  #close-icon {
-    display: none;
-  }
-  #check {
-    right: 20px;
-  }
-  .navigation {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 0;
-    background-color: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 0px 0px 10% 10%;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  }
-  .navigation .listaNavbar {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    font-size: 1.1rem;
-    margin: 0.5rem;
-  }
-  .navigation .listaNavbar li a:hover {
-    color: white;
-    background-color: transparent;
-  }
+.grid-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 14px;
+  z-index: -4;
+  transition: 0.8s ease;
 }
-@media only screen and (max-width: 768px) {
-  .torneo1 {
+
+.g1-150723 {
+  grid-area: area1;
+}
+
+.g2-150723 {
+  grid-area: area2;
+}
+
+.g3-150723 {
+  grid-area: area3;
+}
+
+@media only screen and (max-width: 950px) {
+  .torneo150723 {
     padding-top: 3%;
     margin: auto;
     gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 2fr);
     grid-template-rows: repeat(5, 10%);
-    grid-template-areas: "area1 area1" "area1 area1" "area2 area2" "area2 area2" "area3 area3";
+    grid-template-areas:
+      "area1 area1 area1"
+      "area1 area1 area1"
+      "area2 area2 area2"
+      "area2 area2 area2"
+      "area3 area3 area3";
   }
-  .torneo1 img {
-    width: 100%;
-    height: auto;
-  }
-  .torneo1 p {
-    font-size: 1rem;
-  }
-  .torneo1 .parrafo {
-    padding: 10px 15px;
+  .torneo150723 p {
+    font-size: 1.5rem;
   }
   .titulo {
     font-size: 2rem;
@@ -370,42 +386,38 @@ h6 {
     font-size: 1rem;
   }
 }
-@media only screen and (max-width: 281px) {
-  .torneo1 {
+@media only screen and (max-width: 600px) {
+  .torneo150723 {
     padding-top: 3%;
     margin: auto;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 10%);
-    grid-template-areas: "area1 area1" "area1 area1" "area2 area2" "area2 area2" "area3 area3";
+    grid-template-rows: repeat(3, 15%);
+    grid-template-areas:
+      "area1 area1"
+      "area2 area2"
+      "area3 area3";
   }
-  .torneo1 img {
-    width: 100%;
-    height: auto;
-  }
-  .torneo1 p {
+  .torneo170723 p {
     font-size: 1rem;
-  }
-  .torneo1 .parrafo {
-    padding: 10px 15px;
   }
   .titulo {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .subtitulo {
-    font-size: 50%;
+    font-size: 1rem;
   }
 }
 
-/*# sourceMappingURL=style.css.map */
 /* ------------------------FOOTER ----------------------*/
+
 .footer {
   height: 650px;
-  width: 100vw;
+
   background-color: royalblue;
 }
 .footer-nav {
   height: 90px;
-  width: 100vw;
+
   background-color: red;
   display: flex;
 }
@@ -420,6 +432,5 @@ h6 {
 }
 .footer-carrusel {
   height: 450px;
-  width: 100vw;
   background-color: violet;
 }
