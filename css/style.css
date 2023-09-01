@@ -292,9 +292,128 @@ h6 {
   position: relative;
   padding: 20px;
 }
+/*--------------------------------------------------------------*/
+/*----------------GRILLA TORNEO 5 y 6 DE AGOSTO-----------------*/
+/*--------------------------------------------------------------*/
+.torneo050823 {
+  display: grid;
+  max-width: 80%;
+  grid-template-columns: repeat(4, 2fr);
+  grid-template-rows: repeat(4, 128px);
+  grid-template-areas:
+    "area2 area2 area2 area2"
+    "area2 area2 area2 area2"
+    "area2 area2 area2 area2"
+    "area1 area1 area3 area3";
+  gap: 30px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.grid-hijo {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.grid-hijo:hover > img {
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+
+.grid-texto {
+  position: absolute;
+  font-size: 30px;
+  font-family: "Lunasima";
+  color: #fff;
+  bottom: 0;
+  left: 20px;
+}
+.grid-texto,
+.grid-texto-center {
+  text-shadow: 4px 4px 5px #000000;
+}
+.grid-texto-center {
+  position: absolute;
+  font-size: 30px;
+  font-family: "Lunasima";
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.grid-img,
+.grid-img-galeria {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 14px;
+  z-index: -4;
+  transition: 0.8s ease;
+}
+
+.g1-050823 {
+  grid-area: area1;
+}
+
+.g2-050823 {
+  grid-area: area2;
+}
+
+.g3-050823 {
+  grid-area: area3;
+}
+
+@media only screen and (max-width: 950px) {
+  .torneo050823 {
+    padding-top: 3%;
+    gap: 20px;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: repeat(3, 150px);
+    grid-template-areas:
+      "area1 area1 area2 area2"
+      "area1 area1 area2 area2"
+      "area3 area3 area3 area3";
+  }
+  .torneo050823 p {
+    font-size: 25px;
+  }
+  .titulo {
+    font-size: 55px;
+  }
+  .subtitulo {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 730px) {
+  .torneo050823 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 150px);
+    grid-template-areas:
+      "area1 area1 area1"
+      "area2 area2 area2"
+      "area3 area3 area3";
+  }
+  .torneo050823 p {
+    font-size: 15px;
+  }
+
+  .grid-img {
+    scale: 1.3;
+    object-position: 100% 30%;
+  }
+  .titulo {
+    font-size: 30px;
+  }
+  .subtitulo {
+    font-size: 20px;
+  }
+}
 
 /*--------------------------------------------------------------*/
-/*----------------------------GRILLA----------------------------*/
+/*----------------GRILLA TORNEO 15 y 16 DE JULIO----------------*/
 /*--------------------------------------------------------------*/
 
 .torneo150723 {
@@ -513,7 +632,7 @@ font-size: 224px;
 /* ------------------------FOOTERbanner ----------------------*/
 
 .footer-carousel {
-  height: 298px;
+  height: 400px;
   width: 100%;
   background: linear-gradient(to bottom, rgb(3, 0, 88), rgb(0, 0, 0));
 }
@@ -570,6 +689,7 @@ font-size: 224px;
 /* ------------------------FOOTERenlaces ----------------------*/
 
 .footer-enlaces {
+  border-top: solid 3px red;
   height: 300px;
   background-color: #000000;
   z-index: 99;
