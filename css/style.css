@@ -297,61 +297,16 @@ h6 {
 /*--------------------------------------------------------------*/
 .torneo050823 {
   display: grid;
-  max-width: 80%;
-  grid-template-columns: repeat(4, 2fr);
-  grid-template-rows: repeat(4, 128px);
+  max-width: 90vw;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 150px);
   grid-template-areas:
-    "area2 area2 area2 area2"
-    "area2 area2 area2 area2"
-    "area2 area2 area2 area2"
-    "area1 area1 area3 area3";
+    "area1 area1 area2 area2"
+    "area1 area1 area2 area2"
+    "area3 area3 area3 area3";
   gap: 30px;
   margin: auto;
   margin-bottom: 30px;
-}
-
-.grid-hijo {
-  position: relative;
-  overflow: hidden;
-  border-radius: 14px;
-}
-
-.grid-hijo:hover > img {
-  transform: scale(1.1);
-  opacity: 0.7;
-}
-
-.grid-texto {
-  position: absolute;
-  font-size: 30px;
-  font-family: "Lunasima";
-  color: #fff;
-  bottom: 0;
-  left: 20px;
-}
-.grid-texto,
-.grid-texto-center {
-  text-shadow: 4px 4px 5px #000000;
-}
-.grid-texto-center {
-  position: absolute;
-  font-size: 30px;
-  font-family: "Lunasima";
-  color: #fff;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.grid-img,
-.grid-img-galeria {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 14px;
-  z-index: -4;
-  transition: 0.8s ease;
 }
 
 .g1-050823 {
@@ -380,12 +335,6 @@ h6 {
   .torneo050823 p {
     font-size: 25px;
   }
-  .titulo {
-    font-size: 55px;
-  }
-  .subtitulo {
-    font-size: 25px;
-  }
 }
 @media only screen and (max-width: 730px) {
   .torneo050823 {
@@ -397,17 +346,6 @@ h6 {
       "area3 area3 area3";
   }
   .torneo050823 p {
-    font-size: 15px;
-  }
-
-  .grid-img {
-    scale: 1.3;
-    object-position: 100% 30%;
-  }
-  .titulo {
-    font-size: 30px;
-  }
-  .subtitulo {
     font-size: 20px;
   }
 }
@@ -418,8 +356,8 @@ h6 {
 
 .torneo150723 {
   display: grid;
-  max-width: 80%;
-  grid-template-columns: repeat(4, 2fr);
+  max-width: 90vw;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 150px);
   grid-template-areas:
     "area1 area1 area2 area2"
@@ -516,8 +454,8 @@ h6 {
       "area2 area2 area2"
       "area3 area3 area3";
   }
-  .torneo170723 p {
-    font-size: 15px;
+  .torneo150723 p {
+    font-size: 20px;
   }
 
   .grid-img {
@@ -594,6 +532,7 @@ font-size: 224px;
 .footer {
   display: flex;
   flex-direction: column;
+  background-color: #000000;
 }
 
 /* ------------------------FOOTERnav ----------------------*/
@@ -677,7 +616,7 @@ font-size: 224px;
     opacity: 0;
   }
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 500px) {
   .footer-carousel {
     height: 150px;
   }
@@ -689,8 +628,64 @@ font-size: 224px;
 /* ------------------------FOOTERenlaces ----------------------*/
 
 .footer-enlaces {
-  border-top: solid 3px red;
-  height: 300px;
+  border-top: solid 3px rgba(170, 170, 170, 0.359);
+  height: 200px;
   background-color: #000000;
   z-index: 99;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.enls {
+  height: 30px;
+}
+.footer-enlaces img {
+  margin: 30px;
+  width: 50px;
+  filter: drop-shadow(0px 0px 15px white) drop-shadow(0px 0px 15px white);
+  height: auto;
+  object-fit: cover;
+  position: relative;
+}
+.enls:hover > img {
+  filter: drop-shadow(0px 0px 20px rgb(255, 255, 255))
+    drop-shadow(-5px 5px 10px rgb(255, 255, 255))
+    drop-shadow(5px -5px 10px rgb(255, 255, 255));
+  transition: filter 0.5s linear;
+}
+
+@media only screen and (max-width: 500px) {
+  .footer-enlaces {
+    height: 150px;
+    margin-top: 30px;
+  }
+  .footer-enlaces img {
+    width: 30px;
+  }
+}
+
+.designed {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+}
+.designed a {
+  text-decoration: none;
+}
+.designed a p {
+  font-family: montserrat, sans-serif;
+  color: #fff;
+  font-size: 15px;
+  opacity: 0.5;
+}
+.designed a:hover > p {
+  opacity: 1;
+  transition: all 0.4s linear;
+}
+
+@media only screen and (max-width: 500px) {
+  .designed a p {
+    font-size: 10px;
+  }
 }
