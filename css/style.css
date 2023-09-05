@@ -16,7 +16,10 @@ body {
 }
 
 h1 {
-  display: none;
+  opacity: 0;
+  position: absolute;
+  top: 85vh;
+  font-size: 200px;
 }
 
 div a p {
@@ -41,6 +44,9 @@ div a p {
   justify-content: space-between;
   align-items: center;
   margin: auto;
+}
+.chico {
+  color: #ccff00;
 }
 
 .logo {
@@ -208,6 +214,48 @@ div a p {
   width: 100%;
   height: 100vh;
   background: linear-gradient(to top, rgba(0, 0, 60, 0.721), rgba(0, 0, 60, 0));
+}
+.text-index {
+  position: absolute;
+  left: 1%;
+  font-family: "Poppins", sans-serif;
+  top: 77vh;
+  font-size: 105px;
+  color: #fff;
+}
+.flecha {
+  position: absolute;
+  top: 77vh;
+  left: 48.2%;
+  width: 70px;
+  object-fit: cover;
+  filter: contrast(3);
+  filter: invert();
+  height: 90px;
+  animation: flecha 2s infinite;
+}
+@keyframes flecha {
+  0% {
+    transform: translatey(0%);
+  }
+  40% {
+    transform: translatey(20%);
+  }
+}
+.inscripcion {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  z-index: 99999;
+  font-size: 40px;
+  background-color: #ccff00;
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.inscripcion a {
+  text-decoration: none;
+  color: #030034;
 }
 
 .body2 {
