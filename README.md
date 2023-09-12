@@ -1,3 +1,3 @@
 # **PROYECTO _CIRCUITO CHICO_**
 
-En este proyecto vamos a trabajar Francisco Matteo y Lautaro Ledesma
+En este proyecto estamos trabajando Francisco Matteo y Lautaro Ledesma
