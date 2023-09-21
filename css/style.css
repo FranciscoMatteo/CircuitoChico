@@ -226,7 +226,7 @@ div a p {
 }
 .flecha {
   position: absolute;
-  top: 77vh;
+  bottom: 12vh;
   left: 48.2%;
   width: 70px;
   object-fit: cover;
@@ -245,18 +245,79 @@ div a p {
 }
 .inscripcion {
   position: fixed;
-  bottom: 2%;
-  right: 2%;
+  bottom: 1%;
+  right: 1%;
   z-index: 99999;
-  font-size: 40px;
   background-color: #ccff00;
   border-radius: 20px;
   padding-left: 15px;
   padding-right: 15px;
+  height: 75px;
+  transition: all 0.3s linear;
 }
-.inscripcion a {
+.inscribite {
+  font-family: "Poppins", sans-serif;
   text-decoration: none;
   color: #030034;
+  font-size: 35px;
+  transition: all 0.3s linear;
+}
+.inscribite span {
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s linear;
+}
+.inscripcion:hover {
+  background-color: rgb(3, 0, 88);
+  transition: all 0.3s linear;
+}
+.inscripcion:hover > a {
+  color: #ccff00;
+  transition: all 0.3s linear;
+}
+.inscripcion:hover > .inscribite::after {
+  color: #ccff00;
+  transition: all 0.3s linear;
+}
+.inscribite::after {
+  content: "al torneo";
+  position: absolute;
+  font-size: 20px;
+  color: #030034;
+  top: 40px;
+  left: 85px;
+  transition: all 0.3s linear;
+}
+.inscribite span:nth-child(1) {
+  display: inline-block;
+  animation: aca 2s infinite;
+  font-size: 35px;
+  animation-delay: 0.2s;
+  transform: translatey(15px);
+}
+.inscribite span:nth-child(2) {
+  display: inline-block;
+  animation: aca 2s infinite;
+  font-size: 35px;
+  animation-delay: 0.4s;
+  transform: translatey(15px);
+}
+.inscribite span:nth-child(3) {
+  display: inline-block;
+  animation: aca 2s infinite;
+  font-size: 35px;
+  animation-delay: 0.6s;
+  transform: translatey(15px);
+}
+
+@keyframes aca {
+  0%,
+  40%,
+  100% {
+    transform: translatey(15px);
+  }
+  20% {
+    transform: translateY(-5px);
+  }
 }
 
 .body2 {
@@ -699,6 +760,7 @@ font-size: 224px;
   height: auto;
   object-fit: cover;
   position: relative;
+  transition: filter 0.5s linear;
 }
 .enls:hover > img {
   filter: drop-shadow(0px 0px 20px rgb(255, 255, 255))
@@ -735,6 +797,7 @@ font-size: 224px;
   color: #fff;
   font-size: 15px;
   opacity: 0.5;
+  transition: all 0.4s linear;
 }
 .designed a:hover > p {
   opacity: 1;
