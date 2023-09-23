@@ -126,7 +126,6 @@ div a p {
     background-color: transparent;
   }
 }
-
 /*----------------------INCRIPCION BOTON----------------------*/
 
 .inscripcion {
@@ -218,12 +217,26 @@ h1 {
   justify-content: center;
   font-family: "Oswald";
   color: rgb(255, 255, 255);
-  font-size: 80px;
+  font-size: 70px;
   transition: 0.3s;
   padding: 20px;
   /*Responsive el padding top*/
 }
 h1:hover {
+  color: #ccff00;
+}
+h2 {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  font-family: "Oswald";
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+  transition: 0.3s;
+  padding: 20px;
+  /*Responsive el padding top*/
+}
+h2:hover {
   color: #ccff00;
 }
 
@@ -238,22 +251,26 @@ h4 {
 }
 
 /*------------------------ TABLA ------------------------*/
-.container-table {
+
+.container-table,
+.container-fecha {
   display: flex;
   justify-content: center;
   align-content: center;
   padding: 50px;
 }
-.table-r {
+.table-r,
+.table-fecha {
   color: #fff;
   border-collapse: collapse;
   width: 1200px;
+  text-align: center;
 }
 
 thead {
+  color: #ccff00;
   background-color: rgb(9, 11, 154);
   outline: 1px solid #ccff00;
-  color: #ccff00;
 }
 th {
   padding: 10px 50px;
@@ -269,13 +286,17 @@ td {
   padding: 15px;
   border: 1px solid #00000000;
 }
+.jugadores {
+  width: 500px;
+}
 .jugador {
-  width: 700px;
+  text-align: left;
 }
-.posicion,
-.puntos {
-  text-align: center;
+.vs {
+  width: 80px;
+  padding: 0;
 }
+
 tbody tr:hover {
   outline: 1px solid #ccff00;
   color: #ccff00;
