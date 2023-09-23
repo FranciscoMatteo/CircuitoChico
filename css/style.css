@@ -243,6 +243,9 @@ div a p {
     transform: translatey(20%);
   }
 }
+
+/*----------------------INCRIPCION BOTON----------------------*/
+
 .inscripcion {
   position: fixed;
   bottom: 1%;
