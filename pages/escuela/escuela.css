@@ -14,7 +14,7 @@
 }
 
 body {
-  background-color: #101010;
+  background-color: rgb(0, 0, 60);
   min-height: 100vh;
 }
 main {
@@ -37,7 +37,7 @@ div a p {
   left: 0;
   width: 100%;
   height: 1.3rem 10%;
-  background: #1a1a1a;
+  background: rgb(3, 0, 88);
   z-index: 9999;
   display: flex;
   justify-content: space-between;
@@ -73,7 +73,7 @@ div a p {
 }
 .navbar a:hover {
   color: #ccff00;
-  background-color: #161616;
+  background-color: #030034;
   border-radius: 7px;
   transition: all 0.3s linear;
 }
@@ -126,7 +126,6 @@ div a p {
     background-color: transparent;
   }
 }
-
 /*----------------------INCRIPCION BOTON----------------------*/
 
 .inscripcion {
@@ -153,7 +152,7 @@ div a p {
   transition: all 0.3s linear;
 }
 .inscripcion:hover {
-  background-color: #1a1a1a;
+  background-color: rgb(3, 0, 88);
   transition: all 0.3s linear;
 }
 .inscripcion:hover > a {
@@ -213,158 +212,13 @@ div a p {
 /*------------------------------------------------------*/
 
 h1 {
+  display: none;
+}
+.escuela {
   display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  font-family: "Oswald";
-  color: rgb(255, 255, 255);
-  font-size: 80px;
-  transition: 0.3s;
-  padding-top: 30px;
-  /*Responsive el padding top*/
-}
-h1:hover {
-  color: #ccff00;
-}
-
-h3 {
-  font-family: "Oswald";
-  color: #fff;
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  padding: 5px;
-  margin-bottom: 0px;
-}
-h4 {
-  font-family: "Oswald";
-  color: #fff;
-  font-size: 25px;
-  display: flex;
-  justify-content: center;
-  padding-top: 60px;
-  margin-bottom: 0px;
-}
-.store1::before {
-  position: relative;
-  top: 20px;
-  right: 10px;
-  content: "";
-  width: 80px;
-  height: 2px;
-  background-color: #ffffff;
-}
-.store1::after {
-  position: relative;
-  top: 20px;
-  left: 10px;
-  content: "";
-  width: 80px;
-  height: 2px;
-  background-color: #ffffff;
-}
-.store1:hover {
-  color: #ccff00;
-}
-.store:hover > .store1::after,
-.store:hover > .store1::before {
-  background-color: #ccff00;
-  transition: all 0.3s linear;
-}
-
-/*------------------------ TIENDA ------------------------*/
-
-.contenedor {
-  width: 100%;
-  min-height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 90px;
-  flex-wrap: wrap;
-  background-color: #101010;
-}
-.cont-color {
-  background-color: #1a1a1a;
-  border-radius: 17px;
-  transition: 0.5s;
-}
-
-.cont-color:hover {
-  transition: 0.5s;
-  background-color: #00000000;
-}
-
-.contenedor-seccion {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 20px;
-  margin: 10px;
-  background-color: #1a1a1a;
-  background: linear-gradient(
-    to bottom,
-    rgba(26, 26, 26, 1) 0%,
-    rgb(26, 26, 26) 33%,
-    rgba(204, 255, 0, 1) 100%
-  );
-}
-
-.contenedor-seccion .carta {
-  flex: 1;
-  background-color: #1a1a1a;
-  margin: 10px 10px;
-  border-radius: 20px;
-}
-.img-tienda {
-  width: auto;
-  height: 450px;
-  padding: 20px;
-  transition: 1.2s;
-}
-.img-tienda:hover {
-  transition: 1.2s;
-  transform: scale(1.1);
-}
-.carta h2:hover > .img-tienda {
-  transition: 1.2s;
-  transform: scale(1.1);
-}
-.contenedor-seccion .carta h2 {
-  margin: 15px 0px;
-  font-size: 28px;
-  color: #fff;
-  font-family: "Konkhmer Sleokchher";
-}
-.contenedor-seccion .carta p {
-  font-size: 16px;
-  line-height: 1.5;
-  padding: 0px 10px;
-  margin-bottom: 5px;
-  font-family: "Roboto";
-}
-.boton-wp {
-  display: flex;
-  color: #ccff00;
-  font-size: 20px;
-  justify-content: center;
-  align-items: center;
-  padding: 18px;
-  text-decoration: none;
-}
-.log-tienda {
-  filter: invert(91%) sepia(70%) saturate(7355%) hue-rotate(13deg)
-    brightness(101%) contrast(102%);
-  padding: 10px;
-  display: flex;
-  width: 50px;
-  height: 50px;
-}
-.boton-wp:hover {
-  background-color: #131313;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  padding-top: 80px;
+  margin: auto;
+  width: 70vw;
 }
 /* border-right: 1px solid #ffffff23;
   border-left: 1px solid #ffffff23; */
@@ -380,7 +234,7 @@ h4 {
 /* ------------------------FOOTERnav ----------------------*/
 .footer-nav {
   height: auto;
-  background-color: #1a1a1a;
+  background-color: rgb(3, 0, 88);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -399,7 +253,7 @@ h4 {
 
 .footer-hijo:hover {
   color: #ccff00;
-  background-color: #161616;
+  background-color: #030034;
   border-radius: 7px;
   transition: all 0.3s linear;
 }
@@ -415,7 +269,7 @@ h4 {
 .footer-carousel {
   height: 400px;
   width: 100%;
-  background: linear-gradient(to bottom, #1a1a1a, rgb(0, 0, 0));
+  background: linear-gradient(to bottom, rgb(3, 0, 88), rgb(0, 0, 0));
 }
 .carousel-publi {
   display: flex;
@@ -492,7 +346,6 @@ h4 {
   height: auto;
   object-fit: cover;
   position: relative;
-  transition: filter 0.5s linear;
 }
 .enls:hover > img {
   filter: drop-shadow(0px 0px 20px rgb(255, 255, 255))
