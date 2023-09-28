@@ -4,7 +4,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=League+Gothic&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Exo:wght@800&family=Poppins:wght@500&display=swap");
 
 * {
@@ -212,22 +211,21 @@ div a p {
 /*--------------------------MAIN------------------------*/
 /*------------------------------------------------------*/
 
-h1 {
+.titulo-galeria {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  width: 516px;
   font-family: "Oswald";
   color: rgb(255, 255, 255);
   font-size: 80px;
   transition: 0.3s;
   /*Responsive el padding top*/
 }
-h1:hover {
+.titulo-galeria:hover {
   color: #ccff00;
 }
 
-h4 {
+.subtitulo-galeria {
   font-family: "Oswald";
   color: rgb(255, 255, 255);
   font-size: 30px;
