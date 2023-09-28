@@ -212,7 +212,7 @@ div a p {
 /*--------------------------MAIN------------------------*/
 /*------------------------------------------------------*/
 
-h1 {
+.titulo-ranking {
   display: flex;
   margin: 0 auto;
   justify-content: center;
@@ -223,7 +223,7 @@ h1 {
   padding: 20px;
   /*Responsive el padding top*/
 }
-h1:hover {
+.titulo-ranking:hover {
   color: #ccff00;
 }
 
