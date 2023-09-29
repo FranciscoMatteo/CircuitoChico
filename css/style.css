@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=League+Gothic&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo:wght@800&family=Poppins:wght@500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Exo:wght@800&family=Montserrat&family=Poppins:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@800&family=Montserrat&family=Poppins:wght@500&display=swap");
 
 * {
   margin: 0px;
@@ -22,7 +22,7 @@ body {
   opacity: 0;
   position: absolute;
   top: 85vh;
-  font-size: 200px;
+  font-size: 20px;
 }
 
 div a p {
@@ -236,21 +236,27 @@ div a p {
 .efecto {
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 105vh;
+  z-index: 0;
   background: linear-gradient(to top, rgba(0, 0, 60, 0.721), rgba(0, 0, 60, 0));
 }
+.box-tex {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
 .text-index {
-  position: absolute;
-  left: 1%;
   font-family: "Poppins", sans-serif;
-  top: 77vh;
   font-size: 105px;
   color: #fff;
 }
+
+.box-flecha {
+  color: #000;
+  align-content: center;
+}
 .flecha {
-  position: absolute;
-  bottom: 12vh;
-  left: 48.2%;
+  margin: 10px;
   width: 70px;
   object-fit: cover;
   filter: contrast(3);
@@ -269,15 +275,15 @@ div a p {
 .body2 {
   display: flex;
   flex-direction: column;
-  border-top-left-radius: 3%;
-  border-top-right-radius: 3%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
   background-color: rgb(0, 0, 60);
 }
 
 .fondo {
   display: flex;
   width: 100%;
-  height: 90vh;
+  height: 71vh;
 }
 
 .fondo .carousel {
@@ -431,7 +437,10 @@ div a p {
 /*----------------------------MAIN----------------------------*/
 /*------------------------------------------------------------*/
 
-h2 {
+.titulo-index {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   position: relative;
   top: 20px;
   font-family: "Oswald";
@@ -439,11 +448,11 @@ h2 {
   font-size: 80px;
   transition: 0.3s;
 }
-h2:hover {
+.titulo-index:hover {
   color: #ccff00;
 }
 
-h6 {
+.subtitulo-index {
   font-family: "Oswald";
   color: rgb(255, 255, 255);
   font-size: 30px;
@@ -462,11 +471,90 @@ h6 {
 
 /*---------------------------ESCUELA---------------------------*/
 
-.escuela {
+.body-escuela {
   display: flex;
+  flex-direction: column;
+}
+.subtitulo-escuela {
+  font-family: "Oswald";
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  padding-top: 30px;
+  margin: auto;
+  width: 75vw;
+}
+.escuela {
   padding-top: 80px;
   margin: auto;
-  width: 70vw;
+  width: 75vw;
+}
+.sobre-escuela {
+  color: #fff;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  margin: auto;
+  width: 75vw;
+}
+.subtitulo-dis {
+  font-family: "Oswald";
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  margin: auto;
+  width: 75vw;
+}
+.container-consulta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.consult {
+  border-radius: 50px;
+  padding: 4px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  background-color: #ccff00;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  height: 40px;
+  width: 300px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.consult:hover {
+  box-shadow: inset 1px 0px 0px 5px rgb(0, 0, 0);
+}
+/* .consult:hover > .consult-img {
+  filter: invert(91%) sepia(70%) saturate(7355%) hue-rotate(13deg)
+    brightness(101%) contrast(102%);
+} */
+.consult-img {
+  height: 30px;
+  margin-left: 20px;
+}
+.profes-escuela {
+  margin: auto;
+  color: #fff;
+  text-align: center;
+}
+@media (max-width: 720px) {
+  .container-consulta {
+    display: grid;
+    grid-template-areas: "profe1" "consulta1" "profe2" "consulta2";
+    grid-template-columns: 1fr;
+  }
+  .g1 {
+    grid-area: profe1;
+  }
+  .g3 {
+    grid-area: consulta1;
+  }
+  .g2 {
+    grid-area: profe2;
+  }
+  .g4 {
+    grid-area: consulta2;
+  }
 }
 
 /*
@@ -972,15 +1060,21 @@ tbody tr:hover {
   height: auto;
 }
 .top5-container-seccion .top5-apellido {
-  margin: -25px 0px 20px 0px;
+  margin: -15px 0px 20px 0px;
   padding-top: 0px;
   font-size: 60px;
   font-family: "Oswald";
   color: rgb(255, 255, 255);
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.top5-container-seccion-card .top5-apellido:hover {
+.top5-container-seccion-card:hover > .top5-apellido {
+  color: #ccff00;
+}
+.top5-container-seccion-card:hover > .top5-posicion {
+  color: #ccff00;
+}
+.top5-container-seccion-card:hover > .top5-nombre {
   color: #ccff00;
 }
 
@@ -995,6 +1089,7 @@ tbody tr:hover {
   position: absolute;
   text-align: center;
   font-size: 120px;
+  color: #fff;
   /*----------------FALTA RESPONSIVE----------------*/
 }
 
@@ -1006,9 +1101,6 @@ tbody tr:hover {
 .top5-container-seccion:hover > .top5-posicion {
   color: #ccff00;
 }
-
-
-
 
 /*--------------------------------------------------------------*/
 /*----------------GRILLA TORNEO 15 y 16 DE JULIO----------------*/
@@ -1323,7 +1415,9 @@ tbody tr:hover {
   justify-content: space-evenly;
 }
 .enls {
-  height: 30px;
+  height: 100%;
+  text-decoration: none;
+  color: #000000;
 }
 .footer-enlaces img {
   margin: 40px;
@@ -1365,6 +1459,7 @@ tbody tr:hover {
   text-decoration: none;
 }
 .designed a p {
+  text-align: center;
   font-family: montserrat, sans-serif;
   color: #fff;
   font-size: 15px;
