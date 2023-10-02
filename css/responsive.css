@@ -1,0 +1,16 @@
+/*-----------------------TITULO--------------------------*/
+
+@media only screen and (max-width: 1366px) {
+  .text-index {
+    display: none;
+  }
+  .header {
+    display: none;
+  }
+  .titulo-index {
+    display: none;
+  }
+  .inscripcion {
+    display: none;
+  }
+}
