@@ -1086,9 +1086,11 @@ tbody tr:hover {
 }
 
 .top5-posicion {
+  z-index: 0;
+  font-family: "Oswald";
   position: absolute;
   text-align: center;
-  font-size: 120px;
+  font-size: 100px;
   color: #fff;
   /*----------------FALTA RESPONSIVE----------------*/
 }
