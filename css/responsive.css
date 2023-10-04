@@ -2,15 +2,16 @@
 
 @media only screen and (max-width: 1366px) {
   .text-index {
-    display: none;
+    font-size: 80px;
+    top: calc(100vh - 200px);
   }
-  .header {
+  /* .header {
     display: none;
-  }
+  } */
   .titulo-index {
     display: none;
   }
-  .inscripcion {
+  /* .inscripcion {
     display: none;
-  }
+  } */
 }
