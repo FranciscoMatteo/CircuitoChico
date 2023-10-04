@@ -24,8 +24,10 @@
   </head>
 
   <body>
-    <header class="header">
-      <a href="#" class="logo">Circuito<span class="chico">Chico</span></a>
+    <header id="boxHeader" class="header">
+      <a id="boxLogo" href="#" class="logo logo-index"
+        >Circuito<span class="chico">Chico</span></a
+      >
 
       <nav class="navbar">
         <a href="../../index.html">INICIO</a>
@@ -62,14 +64,13 @@
             <i class='bx bx-x' style='color:#ffffff'  id="close-icon"></i>
         </label>
     </header>-->
-    <div class="efecto">
-      <p class="text-index">
-        <b>Circuito<span class="chico">Chico</span></b>
-      </p>
-      <a href="#1">
-        <img class="flecha" src="../../images/iconos/pngwing.com.png" alt="bajar"/></a>
+    
+<div class="efecto"></div>
+    <div class="inscripcion">
+      <a class="inscribite" href="pages/inscripcion/inscripcion.html"
+        >Inscribite <span>A</span><span>C</span><span>Á</span></a
+      >
     </div>
-
     <section class="fondo">
       <div class="carousel">
         <img src="../../images/torneo15.7/final.png" alt="fondo" />
@@ -83,6 +84,15 @@
         <img src="../../images/torneo25.8/1.jpg" alt="fondo" />
       </div>
     </section>
+    <div id="boxCentrado" class="box-texto">
+      <p class="text-index">
+        <b>Circuito<span class="chico">Chico</span></b>
+      </p>
+    </div>
+
+    <a class="box-flecha" href="#1"
+      ><img class="flecha" src="../../images/iconos/pngwing.com.png" alt="bajar"
+    /></a>
 
     <main class="body2">
       <h1 id="1" class="h1f">Fake</h1>
@@ -198,7 +208,7 @@
     <footer class="footer">
       <div class="footer-nav">
         <a class="footer-hijo" href="../../index.html">INICIO</a>
-        <a href="#">TORNEOS</a>
+        <a class="footer-hijo" href="#">TORNEOS</a>
         <a class="footer-hijo" href="../liga/liga.html">LIGA</a>
         <a class="footer-hijo" href="../tienda/tienda.html">TIENDA</a>
         <a class="footer-hijo" href="../ranking/ranking.html">RANKING</a>
@@ -239,7 +249,7 @@
       </div>
     </footer>
     <!--script de javascript-->
-    <script src="./main.js"></script>
+    <script src="../../main.js"></script>
     <!--script boostrap-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
