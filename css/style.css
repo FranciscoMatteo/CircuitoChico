@@ -457,8 +457,10 @@ div a p {
   font-size: 80px;
   transition: 0.3s;
 }
+
 .titulo-index:hover {
   color: #ccff00;
+  cursor: default;
 }
 
 .subtitulo-index {
@@ -467,6 +469,12 @@ div a p {
   font-size: 30px;
   position: relative;
   padding: 20px;
+  cursor: default;
+}
+
+.subtitulo-index:hover {
+  color: #ccff00;
+  cursor: default;
 }
 /*
 
@@ -1252,6 +1260,7 @@ tbody tr:hover {
   background-color: rgb(0, 0, 60);
   padding: 30px;
   overflow: hidden;
+  cursor: default;
 }
 .texto-move {
   font-family: "League Gothic", sans-serif;
