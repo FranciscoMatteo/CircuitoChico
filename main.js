@@ -8,7 +8,7 @@ function mostrarLogo() {
   logo.style.display = "flex";
   menu.classList.add("mostrar-menu");
 }
-
+let aca = 0;
 window.addEventListener("scroll", () => {
   const logo = document.getElementById("boxLogo");
   const header = document.getElementById("boxHeader");
@@ -37,10 +37,15 @@ window.addEventListener("scroll", () => {
   }
 
   if (scrollY > 500) {
+    if (aca > 3) {
+      aca -= 1;
+    } else {
+      aca += 1;
+    }
     mostrarLogo();
     box.style.opacity = "0";
     menu.classList.remove("sacar-menu");
-  } else {
+  } else if (aca > 1) {
     sacarLogo();
     menu.classList.add("sacar-menu");
     box.style.opacity = "1";
