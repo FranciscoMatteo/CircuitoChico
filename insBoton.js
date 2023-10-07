@@ -6,7 +6,7 @@ document.addEventListener("scroll", function () {
   let anchoPagina = window.innerWidth;
 
   // Verifica si estás al final de la página
-  if (anchoPagina <= 950) {
+  if (anchoPagina <= 1000) {
     if (posicionActual >= alturaPagina) {
       boton.style.opacity = "0";
     } else {

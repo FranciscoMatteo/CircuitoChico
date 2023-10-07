@@ -212,7 +212,7 @@ div a p {
 /*--------------------------MAIN------------------------*/
 /*------------------------------------------------------*/
 
-h1 {
+.titulo-tienda {
   display: flex;
   margin: 0 auto;
   justify-content: center;
@@ -221,13 +221,15 @@ h1 {
   font-size: 80px;
   transition: 0.3s;
   padding-top: 30px;
-  /*Responsive el padding top*/
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-h1:hover {
+.titulo-tienda:hover {
   color: #ccff00;
 }
 
-h3 {
+.store1 {
   font-family: "Oswald";
   color: #fff;
   font-size: 30px;
@@ -236,10 +238,10 @@ h3 {
   padding: 5px;
   margin-bottom: 0px;
 }
-h4 {
+.subtitulo-tienda {
   font-family: "Oswald";
   color: #fff;
-  font-size: 25px;
+  font-size: 30px;
   display: flex;
   justify-content: center;
   padding-top: 60px;
@@ -327,23 +329,17 @@ h4 {
   transition: 1.2s;
   transform: scale(1.1);
 }
-.carta h2:hover > .img-tienda {
+.item-tienda:hover > .img-tienda {
   transition: 1.2s;
   transform: scale(1.1);
 }
-.contenedor-seccion .carta h2 {
+.item-tienda {
   margin: 15px 0px;
-  font-size: 28px;
+  font-size: 25px;
   color: #fff;
   font-family: "Konkhmer Sleokchher";
 }
-.contenedor-seccion .carta p {
-  font-size: 16px;
-  line-height: 1.5;
-  padding: 0px 10px;
-  margin-bottom: 5px;
-  font-family: "Roboto";
-}
+
 .boton-wp {
   display: flex;
   color: #ccff00;
@@ -366,15 +362,7 @@ h4 {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-@media only screen and (max-width: 1000px) {
-  .cont-color:hover {
-    transition: 0.5s;
-    background-color: #1a1a1a;
-  }
-  .contenedor-seccion {
-    box-shadow: 15px 12px 21px -15px #ffffff38;
-  }
-}
+
 /* ------------------------FOOTER ----------------------*/
 
 .footer {
@@ -408,12 +396,6 @@ h4 {
   background-color: #161616;
   border-radius: 7px;
   transition: all 0.3s linear;
-}
-
-@media only screen and (max-width: 730px) {
-  .footer-nav {
-    justify-content: space-around;
-  }
 }
 
 /* ------------------------FOOTERbanner ----------------------*/
@@ -467,14 +449,6 @@ h4 {
     opacity: 0;
   }
 }
-@media only screen and (max-width: 500px) {
-  .footer-carousel {
-    height: 150px;
-  }
-  .carousel-publi {
-    height: 150px;
-  }
-}
 
 /* ------------------------FOOTERenlaces ----------------------*/
 
@@ -506,16 +480,6 @@ h4 {
   transition: filter 0.3s linear;
 }
 
-@media only screen and (max-width: 500px) {
-  .footer-enlaces {
-    height: 150px;
-    margin-top: 30px;
-  }
-  .footer-enlaces img {
-    width: 30px;
-  }
-}
-
 .designed {
   box-sizing: content-box;
   display: flex;
@@ -538,10 +502,4 @@ h4 {
 .designed a:hover > p {
   opacity: 1;
   transition: all 0.4s linear;
-}
-
-@media only screen and (max-width: 500px) {
-  .designed a p {
-    font-size: 10px;
-  }
 }
