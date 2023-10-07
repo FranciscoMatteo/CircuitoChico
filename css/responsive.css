@@ -1,4 +1,4 @@
-/*-----------------------INDEX--------------------------*/
+/*--------------------------INDEX--------------------------*/
 
 @media only screen and (max-width: 1550px) {
   .text-index {
@@ -32,9 +32,6 @@
     font-size: 80px;
     top: 30px;
   }
-  /* .header {
-    display: none;
-  } */
   .titulo-index {
     font-size: 60px;
   }
@@ -70,6 +67,10 @@
     font-size: 80px;
     top: 30px;
   }
+  .footer-hijo {
+    margin: 5px;
+    padding: 5px;
+  }
   @keyframes desplazar-menu {
     from {
       transform: translateX(-50%);
@@ -102,12 +103,16 @@
     font-size: 80px;
     top: 30px;
   }
-  /* .header {
-    display: none;
-  } */
   .titulo-index {
     text-align: center;
     font-size: 60px;
+  }
+  .footer-enlaces {
+    height: 140px;
+    margin-top: 30px;
+  }
+  .footer-enlaces img {
+    width: 40px;
   }
 
   @keyframes desplazar-menu {
@@ -127,31 +132,246 @@
     }
   }
 }
+@media only screen and (max-width: 650px) {
+  .box-texto {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    top: 40%;
+    left: 0;
+    justify-content: center;
+  }
+  .text-index {
+    text-shadow: 10px 10px 10px rgb(0, 0, 60);
+    position: relative;
+    font-size: 50px;
+    top: 30px;
+  }
+  .box-titulo {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .titulo-index {
+    width: 100vw;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: -10px;
+  }
+  .footer-carousel {
+    height: 300px;
+  }
 
-/* X-Small devices (portrait phones, less than 576px)
-No media query for `xs` since this is the default in Bootstrap
+  @keyframes desplazar-menu {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  @keyframes sacar-menu {
+    from {
+      transform: translateX(50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  .body2 {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
 
-Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-  ...;
+  .fondo {
+    height: calc(100vh - 200px);
+  }
+}
+@media only screen and (max-width: 420px) {
+  .box-texto {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    top: 40%;
+    left: 0;
+    justify-content: center;
+  }
+  .text-index {
+    text-shadow: 10px 10px 10px rgb(0, 0, 60);
+    position: relative;
+    font-size: 40px;
+    top: 30px;
+  }
+  .flecha {
+    height: 70px;
+    width: 50px;
+  }
+  .box-titulo {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .titulo-index {
+    width: 100vw;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: -10px;
+  }
+  .footer-carousel {
+    height: 150px;
+  }
+  .carousel-publi {
+    height: 150px;
+  }
+
+  @keyframes desplazar-menu {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  @keyframes sacar-menu {
+    from {
+      transform: translateX(50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  .top5-container {
+    transform: scale(0.8);
+    margin-top: -250px;
+    margin-bottom: -270px;
+  }
 }
 
-/* Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-  ...;
+/*-----------------------FOOTER-----------------------*/
+
+@media only screen and (max-width: 1250px) {
+  .footer-hijo {
+    margin: 5px;
+    padding: 5px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .footer-enlaces {
+    height: 140px;
+    margin-top: 30px;
+  }
+  .footer-enlaces img {
+    width: 40px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .footer-carousel {
+    height: 300px;
+  }
+  .carousel-publi {
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .footer-carousel {
+    height: 150px;
+  }
+  .carousel-publi {
+    height: 150px;
+  }
 }
 
-/* Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-  ...;
-}
+/*-----------------------BOTON INSCRIPCION-----------------------*/
 
-/* X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-  ...;
+@media only screen and (max-width: 650px) {
+  .inscribite {
+    font-size: 30px;
+  }
+  .inscribite span:nth-child(1) {
+    display: none;
+  }
+  .inscribite span:nth-child(2) {
+    display: none;
+  }
+  .inscribite span:nth-child(3) {
+    display: none;
+  }
+  .inscribite::after {
+    font-size: 20px;
+    content: "al torneo aca";
+    left: 18px;
+  }
 }
+/*-----------------------LIGA--------------------------*/
 
-/*XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) {
-  ...;
-}*/
+@media only screen and (max-width: 700px) {
+  .titulo-liga {
+    font-size: 50px;
+  }
+  .titulo-fechas,
+  .titulo-liga2 {
+    font-size: 40px;
+  }
+  .table-liga {
+    border: 3px solid rgb(3, 0, 88);
+  }
+  .table-liga tr {
+    display: flex;
+    flex-direction: column;
+  }
+  .table-liga thead {
+    display: none;
+  }
+  .table-liga .jugador {
+    width: 90vw;
+  }
+  .table-liga td {
+    text-align: left;
+    padding-left: 20px;
+  }
+  .posicion {
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .posicion::before {
+    content: "Posicion:";
+    padding-right: 40px;
+    font-weight: 900;
+    color: #ccff00;
+    font-size: 20px;
+  }
+  .jugador::before {
+    content: "Jugador:";
+    padding-right: 40px;
+    font-weight: 900;
+    color: #ccff00;
+  }
+  .pj::before {
+    content: "Partidos Jugados:";
+    padding-right: 40px;
+    font-weight: 900;
+    color: #ccff00;
+  }
+  .g::before {
+    content: "Partidos Ganados:";
+    padding-right: 40px;
+    font-weight: 900;
+    color: #ccff00;
+  }
+  .p::before {
+    content: "Partidos Perdidos:";
+    padding-right: 40px;
+    font-weight: 900;
+    color: #ccff00;
+  }
+  .sg::before {
+    content: "Set Ganados:";
+    padding-right: 40px;
+    font-weight: 900;
+    color: #ccff00;
+  }
+  .sp::before {
+    content: "Set Perdidos:";
+    padding-right: 40px;
+    font-weight: 900;
+    color: #ccff00;
+  }
+}
