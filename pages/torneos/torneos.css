@@ -1,29 +1,30 @@
 .titulo-torneo {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    position: relative;
-    top: 20px;
-    font-family: "Oswald";
-    color: rgb(255, 255, 255);
-    font-size: 80px;
-    transition: 0.3s;
-  }
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  top: 20px;
+  font-family: "Oswald";
+  color: rgb(255, 255, 255);
+  font-size: 80px;
+  transition: 0.3s;
+  text-align: center;
+}
 
-  .titulo-torneo:hover {
-    color: #ccff00;
-    cursor: default;
-  }
-  
-  .subtitulo-torneo {
-    font-family: "Oswald";
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    position: relative;
-    padding: 20px;
-  }
+.titulo-torneo:hover {
+  color: #ccff00;
+  cursor: default;
+}
 
-  .subtitulo-torneo:hover {
-    color: #ccff00;
-    cursor: default;
-  }
+.subtitulo-torneo {
+  font-family: "Oswald";
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  position: relative;
+  padding: 20px;
+}
+
+.subtitulo-torneo:hover {
+  color: #ccff00;
+  cursor: default;
+}

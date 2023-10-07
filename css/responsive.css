@@ -254,6 +254,9 @@
   }
 }
 @media only screen and (max-width: 720px) {
+  .footer-nav {
+    justify-content: space-around;
+  }
   .footer-enlaces {
     height: 140px;
     margin-top: 30px;
@@ -268,6 +271,11 @@
   }
   .carousel-publi {
     height: 300px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .designed a p {
+    font-size: 10px;
   }
 }
 @media only screen and (max-width: 460px) {
@@ -300,6 +308,7 @@
     left: 18px;
   }
 }
+
 /*-----------------------LIGA--------------------------*/
 
 @media only screen and (max-width: 700px) {
@@ -373,5 +382,107 @@
     padding-right: 40px;
     font-weight: 900;
     color: #ccff00;
+  }
+}
+
+/*-----------------------RANKING--------------------------*/
+
+@media only screen and (max-width: 700px) {
+  .titulo-ranking {
+    font-size: 50px;
+  }
+  .subtitulo-ranking {
+    font-size: 30px;
+  }
+  .table-r {
+    border: 3px solid rgb(3, 0, 88);
+  }
+  .table-r tr {
+    display: flex;
+    flex-direction: column;
+  }
+  .table-r thead {
+    display: none;
+  }
+  .table-r .jugador {
+    width: 90vw;
+  }
+  .table-r .posicion,
+  .table-r .puntos,
+  .table-r .jugador {
+    text-align: left;
+    padding-left: 20px;
+  }
+  .jugador::before {
+    content: "Jugador:";
+
+    padding-right: 40px;
+    font-weight: 900;
+    color: #ccff00;
+  }
+  .posicion::before {
+    content: "Posicion:";
+    font-size: 20px;
+    padding-right: 40px;
+    font-weight: 900;
+    color: #ccff00;
+  }
+  .puntos::before {
+    content: "Puntos:";
+    padding-right: 50px;
+    font-weight: 900;
+    color: #ccff00;
+  }
+}
+
+/*-----------------------ESCUELA--------------------------*/
+
+@media only screen and (max-width: 720px) {
+  .container-consulta {
+    display: grid;
+    grid-template-areas: "profe1" "consulta1" "profe2" "consulta2";
+    grid-template-columns: 1fr;
+  }
+  .g1 {
+    grid-area: profe1;
+  }
+  .g3 {
+    grid-area: consulta1;
+  }
+  .g2 {
+    grid-area: profe2;
+  }
+  .g4 {
+    grid-area: consulta2;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .consult {
+    width: 250px;
+  }
+}
+
+/*-----------------------TIENDA--------------------------*/
+@media only screen and (max-width: 1000px) {
+  .cont-color:hover {
+    transition: 0.5s;
+    background-color: #1a1a1a;
+  }
+  .contenedor-seccion {
+    background: #1a1a1a;
+    box-shadow: 15px 12px 21px -15px #ffffff38;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .titulo-tienda {
+    font-size: 60px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .contenedor {
+    transform: scale(0.8);
+    margin-top: -250px;
+    margin-bottom: -270px;
   }
 }
