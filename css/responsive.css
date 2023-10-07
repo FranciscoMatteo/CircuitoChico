@@ -1,17 +1,157 @@
-/*-----------------------TITULO--------------------------*/
+/*-----------------------INDEX--------------------------*/
 
+@media only screen and (max-width: 1550px) {
+  .text-index {
+    position: relative;
+    font-size: 90px;
+    top: 15px;
+  }
+  .titulo-index {
+    font-size: 60px;
+  }
+  @keyframes desplazar-menu {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  @keyframes sacar-menu {
+    from {
+      transform: translateX(50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+}
 @media only screen and (max-width: 1366px) {
   .text-index {
+    position: relative;
     font-size: 80px;
-    top: calc(100vh - 200px);
+    top: 30px;
   }
   /* .header {
     display: none;
   } */
   .titulo-index {
-    display: none;
+    font-size: 60px;
   }
-  /* .inscripcion {
+  @keyframes desplazar-menu {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  @keyframes sacar-menu {
+    from {
+      transform: translateX(50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .box-texto {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    top: 40%;
+    left: 0;
+    justify-content: center;
+  }
+  .text-index {
+    text-shadow: 10px 10px 10px rgb(0, 0, 60);
+    position: relative;
+    font-size: 80px;
+    top: 30px;
+  }
+  @keyframes desplazar-menu {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  @keyframes sacar-menu {
+    from {
+      transform: translateX(50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+}
+@media only screen and (max-width: 720px) {
+  .box-texto {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    top: 40%;
+    left: 0;
+    justify-content: center;
+  }
+  .text-index {
+    text-shadow: 10px 10px 10px rgb(0, 0, 60);
+    position: relative;
+    font-size: 80px;
+    top: 30px;
+  }
+  /* .header {
     display: none;
   } */
+  .titulo-index {
+    text-align: center;
+    font-size: 60px;
+  }
+
+  @keyframes desplazar-menu {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  @keyframes sacar-menu {
+    from {
+      transform: translateX(50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
 }
+
+/* X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap
+
+Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  ...;
+}
+
+/* Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  ...;
+}
+
+/* Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  ...;
+}
+
+/* X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  ...;
+}
+
+/*XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+  ...;
+}*/

@@ -8,6 +8,7 @@ function mostrarLogo() {
   logo.style.display = "flex";
   menu.classList.add("mostrar-menu");
 }
+let tamanoDeseado = 1366;
 let aca = 0;
 window.addEventListener("scroll", () => {
   const logo = document.getElementById("boxLogo");
@@ -36,18 +37,41 @@ window.addEventListener("scroll", () => {
     menu.classList.remove("mostrar-menu");
   }
 
-  if (scrollY > 500) {
-    if (aca > 3) {
-      aca -= 1;
-    } else {
-      aca += 1;
+  if (window.innerWidth <= tamanoDeseado) {
+    if (scrollY > 400) {
+      if (aca > 3) {
+        aca -= 1;
+      } else {
+        aca += 1;
+      }
+      mostrarLogo();
+      box.style.opacity = "0";
+      menu.classList.remove("sacar-menu");
+    } else if (aca > 1) {
+      sacarLogo();
+      menu.classList.add("sacar-menu");
+      box.style.opacity = "1";
     }
-    mostrarLogo();
-    box.style.opacity = "0";
-    menu.classList.remove("sacar-menu");
-  } else if (aca > 1) {
-    sacarLogo();
-    menu.classList.add("sacar-menu");
-    box.style.opacity = "1";
+  } else {
+    if (scrollY > 650) {
+      if (aca > 3) {
+        aca -= 1;
+      } else {
+        aca += 1;
+      }
+      mostrarLogo();
+      box.style.opacity = "0";
+      menu.classList.remove("sacar-menu");
+    } else if (aca > 1) {
+      sacarLogo();
+      menu.classList.add("sacar-menu");
+      box.style.opacity = "1";
+    }
   }
 });
+
+//  Agregar un event listener para el evento "resize" de la ventana
+// window.addEventListener("resize", verificarTamañoPantalla);
+
+//   Llamar a la función una vez al cargar la página para verificar el tamaño inicial
+// verificarTamañoPantalla();
