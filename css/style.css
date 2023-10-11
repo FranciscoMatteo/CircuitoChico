@@ -271,6 +271,7 @@ nav div.sacar-menu {
   background: linear-gradient(to top, rgba(0, 0, 60, 0.721), rgba(0, 0, 60, 0));
 }
 .box-texto {
+  cursor: default;
   position: relative;
   height: 10px;
   width: 90vw;
