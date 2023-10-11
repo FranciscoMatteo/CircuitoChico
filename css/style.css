@@ -77,6 +77,7 @@ main {
 }
 .logo-index {
   display: none;
+  z-index: 9999;
 }
 
 .navbar {
@@ -120,6 +121,55 @@ nav div.sacar-menu {
   transition: all 0.3s linear;
 }
 
+.icons {
+  right: 0;
+  top: 10;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+/* BREAK POINTS */
+
+@media (max-width:768px) {
+
+  .icons {
+    display: inline-flex;
+    z-index: 9999;
+    margin-right: 5%;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 6%;
+    left: 0;
+    width: 100%;
+    height: 17.7rem;
+    background-color: red;
+  }
+
+  .navbar a {
+    width: 100%;
+    display: flex;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  /*
+  .text-index {
+    display: none;
+  }
+
+  .chico {
+    display: none;
+  }
+  */
+}
+
+
+
+
+/*
 @media (max-width: 540px) {
   #check:checked ~ .listaNavbar {
     height: 15rem;
@@ -133,11 +183,11 @@ nav div.sacar-menu {
   .logo2 {
     display: none;
   }
+  
   .icons {
-    display: inline-flex;
-    width: 25px;
-    height: auto;
-    margin-right: 20px;
+    font-size: 2.8rem;
+    color: white;
+    cursor: pointer;
   }
   #close-icon {
     display: none;
@@ -168,6 +218,7 @@ nav div.sacar-menu {
     background-color: transparent;
   }
 }
+*/
 
 /*.menu-icon {
     display: none;
@@ -271,6 +322,7 @@ nav div.sacar-menu {
   background: linear-gradient(to top, rgba(0, 0, 60, 0.721), rgba(0, 0, 60, 0));
 }
 .box-texto {
+  cursor: default;
   position: relative;
   height: 10px;
   width: 90vw;
