@@ -77,6 +77,7 @@ main {
 }
 .logo-index {
   display: none;
+  z-index: 9999;
 }
 
 .navbar {
@@ -120,6 +121,55 @@ nav div.sacar-menu {
   transition: all 0.3s linear;
 }
 
+.icons {
+  right: 0;
+  top: 10;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+/* BREAK POINTS */
+
+@media (max-width:768px) {
+
+  .icons {
+    display: inline-flex;
+    z-index: 9999;
+    margin-right: 5%;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 6%;
+    left: 0;
+    width: 100%;
+    height: 17.7rem;
+    background-color: red;
+  }
+
+  .navbar a {
+    width: 100%;
+    display: flex;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  /*
+  .text-index {
+    display: none;
+  }
+
+  .chico {
+    display: none;
+  }
+  */
+}
+
+
+
+
+/*
 @media (max-width: 540px) {
   #check:checked ~ .listaNavbar {
     height: 15rem;
@@ -133,11 +183,11 @@ nav div.sacar-menu {
   .logo2 {
     display: none;
   }
+  
   .icons {
-    display: inline-flex;
-    width: 25px;
-    height: auto;
-    margin-right: 20px;
+    font-size: 2.8rem;
+    color: white;
+    cursor: pointer;
   }
   #close-icon {
     display: none;
@@ -168,6 +218,7 @@ nav div.sacar-menu {
     background-color: transparent;
   }
 }
+*/
 
 /*.menu-icon {
     display: none;
@@ -294,11 +345,11 @@ nav div.sacar-menu {
 }
 .flecha {
   margin: 10px;
+  height: 90px;
   width: 70px;
   object-fit: cover;
   filter: contrast(3);
   filter: invert();
-  height: 90px;
   animation: flecha 2s infinite;
 }
 @keyframes flecha {
@@ -474,6 +525,17 @@ nav div.sacar-menu {
 /*----------------------------MAIN----------------------------*/
 /*------------------------------------------------------------*/
 
+.box-titulo {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.guion::before,
+.guion::after {
+  content: "";
+  width: 20px;
+}
+
 .titulo-index {
   display: flex;
   justify-content: center;
@@ -486,7 +548,7 @@ nav div.sacar-menu {
   transition: 0.3s;
 }
 
-.titulo-index:hover {
+.box-titulo:hover > .titulo-index {
   color: #ccff00;
   cursor: default;
 }
@@ -504,6 +566,13 @@ nav div.sacar-menu {
   color: #ccff00;
   cursor: default;
 }
+/* .fondito {
+  position: relative;
+  bottom: 100px;
+  z-index: 999999999;
+  width: 100%;
+  height: 500px;
+} */
 /*
 
 
@@ -579,25 +648,6 @@ nav div.sacar-menu {
   color: #fff;
   text-align: center;
 }
-@media (max-width: 720px) {
-  .container-consulta {
-    display: grid;
-    grid-template-areas: "profe1" "consulta1" "profe2" "consulta2";
-    grid-template-columns: 1fr;
-  }
-  .g1 {
-    grid-area: profe1;
-  }
-  .g3 {
-    grid-area: consulta1;
-  }
-  .g2 {
-    grid-area: profe2;
-  }
-  .g4 {
-    grid-area: consulta2;
-  }
-}
 
 /*
 
@@ -621,6 +671,8 @@ nav div.sacar-menu {
   transition: 0.3s;
   padding: 20px;
   padding-top: 30px;
+  text-align: center;
+  cursor: default;
 }
 .titulo-liga:hover {
   color: #ccff00;
@@ -634,6 +686,7 @@ nav div.sacar-menu {
   font-size: 60px;
   transition: 0.3s;
   padding: 20px;
+  cursor: default;
 }
 .titulo-fechas:hover {
   color: #ccff00;
@@ -671,24 +724,32 @@ nav div.sacar-menu {
 .table-fechas tr:nth-child(even) {
   background-color: rgb(3, 0, 88);
 }
-.table-liga td,
-.table-fechas td {
+.posicion,
+.jugador,
+.pj,
+.g,
+.p,
+.sg,
+.sp,
+.fecha,
+.equipo1,
+.vs,
+.equipo2 {
   font-size: 18px;
   padding: 15px;
   border: 1px solid #00000000;
 }
+
 .table-liga .jugadores {
   width: 500px;
 }
-/* .jugador {
-  text-align: left;
-} */
+.posicion {
+  font-size: 30px;
+  font-weight: 900;
+}
 .table-fechas .vs {
   width: 80px;
   padding: 0;
-}
-.posicion {
-  font-size: 20px;
 }
 
 .container-galeria {
@@ -710,7 +771,7 @@ nav div.sacar-menu {
 }
 .img-galeria {
   display: flex;
-  width: 900px;
+  width: 1200px;
   height: 200px;
   object-fit: cover;
   border-radius: 20px;
@@ -736,7 +797,7 @@ nav div.sacar-menu {
 .efectito {
   position: absolute;
   top: 0;
-  width: 900px;
+  width: 1200px;
   height: 200px;
   z-index: 1;
   background: linear-gradient(to top, rgba(0, 0, 60, 0.544), rgba(0, 0, 60, 0));
@@ -747,68 +808,107 @@ tbody tr:hover {
   color: #ccff00;
 }
 
-@media only screen and (max-width: 700px) {
-  .table-liga {
-    border: 3px solid rgb(3, 0, 88);
-  }
-  .table-liga tr {
-    display: flex;
-    flex-direction: column;
-  }
-  .table-liga thead {
-    display: none;
-  }
-  .table-liga .jugador {
-    width: 90vw;
-  }
-  .table-liga td {
-    text-align: left;
-    padding-left: 20px;
-  }
-  .jugador::before {
-    content: "Jugador:";
-    padding-right: 40px;
-    font-weight: 900;
-    color: #ccff00;
-  }
-  .posicion::before {
-    content: "Posicion:";
-    padding-right: 40px;
-    font-weight: 900;
-    color: #ccff00;
-  }
-  .pj::before {
-    content: "Partidos Jugados:";
-    padding-right: 40px;
-    font-weight: 900;
-    color: #ccff00;
-  }
-  .g::before {
-    content: "Partidos Ganados:";
-    padding-right: 40px;
-    font-weight: 900;
-    color: #ccff00;
-  }
-  .p::before {
-    content: "Partidos Perdidos:";
-    padding-right: 40px;
-    font-weight: 900;
-    color: #ccff00;
-  }
-  .sg::before {
-    content: "Set Ganados:";
-    padding-right: 40px;
-    font-weight: 900;
-    color: #ccff00;
-  }
-  .sp::before {
-    content: "Set Perdidos:";
-    padding-right: 40px;
-    font-weight: 900;
-    color: #ccff00;
-  }
+.titulo-liga2 {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  font-family: "Oswald";
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+  transition: 0.3s;
+  padding: 20px;
+  text-align: center;
+  cursor: default;
+}
+.titulo-liga2:hover {
+  color: #ccff00;
+}
+.box-noticia {
+  display: grid;
+  max-width: 1200px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 150px);
+  grid-template-areas:
+    "area1 area1 area2 area2"
+    "area1 area1 area2 area2";
+  gap: 30px;
+  margin: auto;
+  padding: 30px;
+  margin-bottom: 30px;
 }
 
+.grid-noti {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.grid-noti:hover > img {
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+
+.grid-texto {
+  position: absolute;
+  font-size: 30px;
+  font-family: "Lunasima";
+  color: #fff;
+  bottom: 0;
+  left: 20px;
+}
+.grid-texto {
+  text-shadow: 4px 4px 5px #000000;
+}
+
+.grid-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 14px;
+  z-index: -4;
+  transition: 0.8s ease;
+}
+
+.g1-noti {
+  grid-area: area1;
+}
+
+.g2-noti {
+  grid-area: area2;
+}
+
+@media only screen and (max-width: 950px) {
+  .box-noticia {
+    padding-top: 3%;
+    gap: 20px;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: repeat(2, 150px);
+    grid-template-areas:
+      "area1 area1 area2 area2"
+      "area1 area1 area2 area2";
+  }
+  .box-noticia p {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 730px) {
+  .box-noticia {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 150px);
+    grid-template-areas:
+      "area1 area1 area1"
+      "area2 area2 area2";
+  }
+  .box-noticia p {
+    font-size: 20px;
+  }
+
+  .grid-img {
+    scale: 1.3;
+    object-position: 100% 30%;
+  }
+}
 /*
 
 
@@ -831,8 +931,22 @@ tbody tr:hover {
   font-size: 80px;
   transition: 0.3s;
   padding-top: 30px;
+  cursor: default;
 }
 .titulo-ranking:hover {
+  color: #ccff00;
+}
+.subtitulo-ranking {
+  font-family: "Oswald";
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 20px;
+  cursor: default;
+}
+.subtitulo-ranking:hover {
   color: #ccff00;
 }
 
@@ -863,7 +977,13 @@ tbody tr:hover {
 .table-r tr:nth-child(even) {
   background-color: rgb(3, 0, 88);
 }
-.table-r td {
+.posicion {
+  font-size: 30px;
+  padding: 15px;
+  border: 1px solid #00000000;
+}
+.jugador,
+.puntos {
   font-size: 18px;
   padding: 15px;
   border: 1px solid #00000000;
@@ -878,46 +998,6 @@ tbody tr:hover {
 tbody tr:hover {
   outline: 1px solid #ccff00;
   color: #ccff00;
-}
-
-@media only screen and (max-width: 700px) {
-  .table-r {
-    border: 3px solid rgb(3, 0, 88);
-  }
-  .table-r tr {
-    display: flex;
-    flex-direction: column;
-  }
-  .table-r thead {
-    display: none;
-  }
-  .table-r .jugador {
-    width: 90vw;
-  }
-  .table-r .posicion,
-  .table-r .puntos,
-  .table-r .jugador {
-    text-align: left;
-    padding-left: 20px;
-  }
-  .jugador::before {
-    content: "Jugador:";
-    padding-right: 40px;
-    font-weight: 900;
-    color: #ccff00;
-  }
-  .posicion::before {
-    content: "Posicion:";
-    padding-right: 40px;
-    font-weight: 900;
-    color: #ccff00;
-  }
-  .puntos::before {
-    content: "Puntos:";
-    padding-right: 50px;
-    font-weight: 900;
-    color: #ccff00;
-  }
 }
 
 /*
@@ -1448,7 +1528,7 @@ tbody tr:hover {
 .carousel-publi {
   display: flex;
   margin-top: 20px;
-  animation: slide-fade 20s infinite;
+  animation: slide-fade 20s infinite, zindex 20s infinite;
   opacity: 0;
   position: absolute;
   height: 300px;
@@ -1462,10 +1542,12 @@ tbody tr:hover {
 
 .carousel-publi:nth-child(1) {
   animation-delay: 0s;
+  z-index: 3;
 }
 
 .carousel-publi:nth-child(2) {
   animation-delay: 10s;
+  z-index: 1;
 }
 
 .carousel-publi img {
@@ -1473,7 +1555,16 @@ tbody tr:hover {
   height: 100%;
   object-fit: contain;
 }
-
+@keyframes zindex {
+  0% {
+  }
+  99% {
+    z-index: 1;
+  }
+  100% {
+    z-index: -3;
+  }
+}
 @keyframes slide-fade {
   0% {
     opacity: 0;
@@ -1487,14 +1578,6 @@ tbody tr:hover {
 
   60% {
     opacity: 0;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .footer-carousel {
-    height: 150px;
-  }
-  .carousel-publi {
-    height: 150px;
   }
 }
 
@@ -1513,35 +1596,32 @@ tbody tr:hover {
   justify-content: space-evenly;
 }
 .enls {
-  height: 100%;
   text-decoration: none;
   color: #000000;
 }
 .footer-enlaces img {
   margin: 40px;
   width: 50px;
-  filter: drop-shadow(0px 0px 15px white) drop-shadow(0px 0px 15px white);
+  filter: invert(60%);
   height: auto;
   object-fit: cover;
   position: relative;
-  transition: filter 0.5s linear;
+  transition: filter 0.3s linear;
 }
 .enls:hover > img {
-  filter: drop-shadow(0px 0px 20px rgb(255, 255, 255))
-    drop-shadow(-5px 5px 10px rgb(255, 255, 255))
-    drop-shadow(5px -5px 10px rgb(255, 255, 255));
-  transition: filter 0.5s linear;
+  filter: invert(0%);
+  transition: filter 0.3s linear;
 }
 
-@media only screen and (max-width: 500px) {
+/* @media only screen and (max-width: 500px) {
   .footer-enlaces {
-    height: 150px;
+    height: 140px;
     margin-top: 30px;
   }
   .footer-enlaces img {
-    width: 30px;
+    width: 40px;
   }
-}
+} */
 
 .designed {
   box-sizing: content-box;

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="torneos.css" />
     <link rel="stylesheet" href="../../css/normalize.css" />
     <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/responsive.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -31,13 +32,13 @@
 
       <nav class="navbar">
         <div>
-        <a href="../../index.html">INICIO</a>
-        <a href="#">TORNEOS</a>
-        <a href="../liga/liga.html">LIGA</a>
-        <a href="../tienda/tienda.html">TIENDA</a>
-        <a href="../ranking/ranking.html">RANKING</a>
-        <a href="../escuela/escuela.html">ESCUELA</a>
-        <a href="../galeria/galeria.html">GALERÍA</a>
+          <a href="../../index.html">INICIO</a>
+          <a href="#">TORNEOS</a>
+          <a href="../liga/liga.html">LIGA</a>
+          <a href="../tienda/tienda.html">TIENDA</a>
+          <a href="../ranking/ranking.html">RANKING</a>
+          <a href="../escuela/escuela.html">ESCUELA</a>
+          <a href="../galeria/galeria.html">GALERÍA</a>
         </div>
       </nav>
     </header>
@@ -66,9 +67,9 @@
             <i class='bx bx-x' style='color:#ffffff'  id="close-icon"></i>
         </label>
     </header>-->
-    
-<div class="efecto"></div>
-    <div class="inscripcion">
+
+    <div class="efecto"></div>
+    <div id="insBoton" class="inscripcion">
       <a class="inscribite" href="pages/inscripcion/inscripcion.html"
         >Inscribite <span>A</span><span>C</span><span>Á</span></a
       >
@@ -93,7 +94,10 @@
     </div>
 
     <a class="box-flecha" href="#1"
-      ><img class="flecha" src="../../images/iconos/pngwing.com.png" alt="bajar"
+      ><img
+        class="flecha"
+        src="../../images/iconos/pngwing.com.png"
+        alt="bajar"
     /></a>
 
     <main class="body2">
@@ -101,13 +105,11 @@
 
       <!----------------------------PRIMER TORNEO 25 y 26 DE AGOSTO------------------------------------------------------------->
 
-      <h2
-        class="d-flex justify-content-center align-items-center titulo-torneo"
-        data-aos="fade-up"
-      >
-        Torneo 8va - Caballeros
-      </h2>
-
+      <div class="box-titulo">
+        <h2 class="titulo-index" data-aos="fade-up">Torneo 8va</h2>
+        <h2 class="titulo-index guion" data-aos="fade-up">-</h2>
+        <h2 class="titulo-index" data-aos="fade-up">Caballeros</h2>
+      </div>
       <h6
         class="d-flex justify-content-center align-items-center subtitulo-torneo"
         data-aos="fade-up"
@@ -117,14 +119,25 @@
 
       <section class="torneo150723" data-aos="fade-up">
         <a href="#" class="grid-hijo g1-150723">
-          <img class="grid-img" src="../../images/torneo25.8/ganadores25.8.jpg" alt="final" />
+          <img
+            class="grid-img"
+            src="../../images/torneo25.8/ganadores25.8.jpg"
+            alt="final"
+          />
           <div class="grid-texto"><p>Campeones de la fecha</p></div>
         </a>
         <a href="#" class="grid-hijo g2-150723">
-          <img class="grid-img" src="../../images/torneo25.8/semifinal25.8.jpg" alt="semi" />
+          <img
+            class="grid-img"
+            src="../../images/torneo25.8/semifinal25.8.jpg"
+            alt="semi"
+          />
           <div class="grid-texto"><p>Semifinal</p></div>
         </a>
-        <a href="../../pages/galeria/galeria.html#25y26Agosto" class="grid-hijo g3-150723">
+        <a
+          href="../../pages/galeria/galeria.html#25y26Agosto"
+          class="grid-hijo g3-150723"
+        >
           <img
             class="grid-img-galeria galeria_1"
             src="../../images/torneo15.7/galeria.jpg"
@@ -136,12 +149,11 @@
 
       <!----------------------------PRIMER TORNEO 5 y 6 DE AGOSTO------------------------------------------------------------->
 
-      <h2
-        class="d-flex justify-content-center align-items-center titulo-torneo"
-        data-aos="fade-up"
-      >
-        Torneo 7ma - Caballeros
-      </h2>
+      <div class="box-titulo">
+        <h2 class="titulo-index">Torneo 7ma</h2>
+        <h2 class="titulo-index guion">-</h2>
+        <h2 class="titulo-index">Caballeros</h2>
+      </div>
 
       <h6
         class="d-flex justify-content-center align-items-center subtitulo-torneo"
@@ -160,10 +172,17 @@
           <div class="grid-texto"><p>Los ganadores</p></div>
         </a>
         <a href="#" class="grid-hijo g2-050823">
-          <img class="grid-img" src="../../images/torneo5.8/union.jpg" alt="todos" />
+          <img
+            class="grid-img"
+            src="../../images/torneo5.8/union.jpg"
+            alt="todos"
+          />
           <div class="grid-texto"><p>Así se vivió</p></div>
         </a>
-        <a href="../../pages/galeria/galeria.html#5y6Agosto" class="grid-hijo g3-050823">
+        <a
+          href="../../pages/galeria/galeria.html#5y6Agosto"
+          class="grid-hijo g3-050823"
+        >
           <img
             class="grid-img-galeria galeria_1"
             src="../../images/torneo15.7/galeria.jpg"
@@ -174,12 +193,11 @@
       </section>
 
       <!----------------------------PRIMER TORNEO 15 y 16 DE JULIO------------------------------------------------------------->
-      <h2
-        class="d-flex justify-content-center align-items-center titulo-torneo"
-        data-aos="fade-up"
-      >
-        Torneo 7ma - Caballeros
-      </h2>
+      <div class="box-titulo">
+        <h2 class="titulo-index">Torneo 7ma</h2>
+        <h2 class="titulo-index guion">-</h2>
+        <h2 class="titulo-index">Caballeros</h2>
+      </div>
       <h6
         class="d-flex justify-content-center align-items-center subtitulo-torneo"
         data-aos="fade-up"
@@ -189,14 +207,25 @@
 
       <section class="torneo150723" data-aos="fade-up">
         <a href="#" class="grid-hijo g1-150723">
-          <img class="grid-img" src="../../images/torneo15.7/final.png" alt="final" />
+          <img
+            class="grid-img"
+            src="../../images/torneo15.7/final.png"
+            alt="final"
+          />
           <div class="grid-texto"><p>Reviví la final</p></div>
         </a>
         <a href="#" class="grid-hijo g2-150723">
-          <img class="grid-img" src="../../images/torneo15.7/semi.jpg" alt="semi" />
+          <img
+            class="grid-img"
+            src="../../images/torneo15.7/semi.jpg"
+            alt="semi"
+          />
           <div class="grid-texto"><p>Semifinal</p></div>
         </a>
-        <a href="../../pages/galeria/galeria.html#15y16Julio" class="grid-hijo g3-150723">
+        <a
+          href="../../pages/galeria/galeria.html#15y16Julio"
+          class="grid-hijo g3-150723"
+        >
           <img
             class="grid-img-galeria galeria_1"
             src="../../images/torneo15.7/galeria.jpg"
@@ -205,8 +234,7 @@
           <div class="grid-texto-center"><p>Galería</p></div>
         </a>
       </section>
-
-    </section>
+    </main>
     <footer class="footer">
       <div class="footer-nav">
         <a class="footer-hijo" href="../../index.html">INICIO</a>
@@ -238,10 +266,10 @@
           href="https://www.instagram.com/circuito.chico.1/"
           target="_blank"
         >
-          <img class="imagen" src="../../images/iconos/instagram.png" alt=""
+          <img src="../../images/iconos/instagram2.png" alt=""
         /></a>
         <a class="enls" href="https://web.whatsapp.com" target="_blank">
-          <img src="../../images/iconos/whatsapp.png" alt=""
+          <img src="../../images/iconos/whatsapp2.png" alt=""
         /></a>
       </div>
       <div class="designed">

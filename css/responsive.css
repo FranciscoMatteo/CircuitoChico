@@ -1,17 +1,488 @@
-/*-----------------------TITULO--------------------------*/
+/*--------------------------INDEX--------------------------*/
 
+@media only screen and (max-width: 1550px) {
+  .text-index {
+    position: relative;
+    font-size: 90px;
+    top: 15px;
+  }
+  .titulo-index {
+    font-size: 60px;
+  }
+  @keyframes desplazar-menu {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  @keyframes sacar-menu {
+    from {
+      transform: translateX(50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+}
 @media only screen and (max-width: 1366px) {
   .text-index {
+    position: relative;
     font-size: 80px;
-    top: calc(100vh - 200px);
+    top: 30px;
   }
-  /* .header {
-    display: none;
-  } */
   .titulo-index {
+    font-size: 60px;
+  }
+  @keyframes desplazar-menu {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  @keyframes sacar-menu {
+    from {
+      transform: translateX(50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .box-texto {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    top: 40%;
+    left: 0;
+    justify-content: center;
+  }
+  .text-index {
+    text-shadow: 10px 10px 10px rgb(0, 0, 60);
+    position: relative;
+    font-size: 80px;
+    top: 30px;
+  }
+  .footer-hijo {
+    margin: 5px;
+    padding: 5px;
+  }
+  @keyframes desplazar-menu {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  @keyframes sacar-menu {
+    from {
+      transform: translateX(50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+}
+@media only screen and (max-width: 720px) {
+  .box-texto {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    top: 40%;
+    left: 0;
+    justify-content: center;
+  }
+  .text-index {
+    text-shadow: 10px 10px 10px rgb(0, 0, 60);
+    position: relative;
+    font-size: 80px;
+    top: 30px;
+  }
+  .titulo-index {
+    text-align: center;
+    font-size: 60px;
+  }
+  .footer-enlaces {
+    height: 140px;
+    margin-top: 30px;
+  }
+  .footer-enlaces img {
+    width: 40px;
+  }
+
+  @keyframes desplazar-menu {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  @keyframes sacar-menu {
+    from {
+      transform: translateX(50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+}
+@media only screen and (max-width: 650px) {
+  .box-texto {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    top: 40%;
+    left: 0;
+    justify-content: center;
+  }
+  .text-index {
+    text-shadow: 10px 10px 10px rgb(0, 0, 60);
+    position: relative;
+    font-size: 50px;
+    top: 30px;
+  }
+  .box-titulo {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .titulo-index {
+    width: 100vw;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: -10px;
+  }
+  .footer-carousel {
+    height: 300px;
+  }
+
+  @keyframes desplazar-menu {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  @keyframes sacar-menu {
+    from {
+      transform: translateX(50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  .body2 {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+
+  .fondo {
+    height: calc(100vh - 200px);
+  }
+}
+@media only screen and (max-width: 420px) {
+  .box-texto {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    top: 40%;
+    left: 0;
+    justify-content: center;
+  }
+  .text-index {
+    text-shadow: 10px 10px 10px rgb(0, 0, 60);
+    position: relative;
+    font-size: 40px;
+    top: 30px;
+  }
+  .flecha {
+    height: 70px;
+    width: 50px;
+  }
+  .box-titulo {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .titulo-index {
+    width: 100vw;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: -10px;
+  }
+  .footer-carousel {
+    height: 150px;
+  }
+  .carousel-publi {
+    height: 150px;
+  }
+
+  @keyframes desplazar-menu {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  @keyframes sacar-menu {
+    from {
+      transform: translateX(50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  .top5-container {
+    transform: scale(0.8);
+    margin-top: -250px;
+    margin-bottom: -270px;
+  }
+}
+
+/*-----------------------FOOTER-----------------------*/
+
+@media only screen and (max-width: 1250px) {
+  .footer-hijo {
+    margin: 5px;
+    padding: 5px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .footer-nav {
+    justify-content: space-around;
+  }
+  .footer-enlaces {
+    height: 140px;
+    margin-top: 30px;
+  }
+  .footer-enlaces img {
+    width: 40px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .footer-carousel {
+    height: 300px;
+  }
+  .carousel-publi {
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .designed a p {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .footer-carousel {
+    height: 150px;
+  }
+  .carousel-publi {
+    height: 150px;
+  }
+}
+
+/*-----------------------BOTON INSCRIPCION-----------------------*/
+
+@media only screen and (max-width: 650px) {
+  .inscribite {
+    font-size: 30px;
+  }
+  .inscribite span:nth-child(1) {
     display: none;
   }
-  /* .inscripcion {
+  .inscribite span:nth-child(2) {
     display: none;
-  } */
+  }
+  .inscribite span:nth-child(3) {
+    display: none;
+  }
+  .inscribite::after {
+    font-size: 20px;
+    content: "al torneo aca";
+    left: 18px;
+  }
+}
+
+/*-----------------------LIGA--------------------------*/
+
+@media only screen and (max-width: 700px) {
+  .titulo-liga {
+    font-size: 50px;
+  }
+  .titulo-fechas,
+  .titulo-liga2 {
+    font-size: 40px;
+  }
+  .table-liga {
+    border: 3px solid rgb(3, 0, 88);
+  }
+  .table-liga tr {
+    display: flex;
+    flex-direction: column;
+  }
+  .table-liga thead {
+    display: none;
+  }
+  .table-liga .jugador {
+    width: 90vw;
+  }
+  .table-liga td {
+    text-align: left;
+    padding-left: 20px;
+  }
+  .posicion {
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .posicion::before {
+    content: "Posicion:";
+    padding-right: 40px;
+    font-weight: 900;
+    color: #ccff00;
+    font-size: 20px;
+  }
+  .jugador::before {
+    content: "Jugador:";
+    padding-right: 40px;
+    font-weight: 900;
+    color: #ccff00;
+  }
+  .pj::before {
+    content: "Partidos Jugados:";
+    padding-right: 40px;
+    font-weight: 900;
+    color: #ccff00;
+  }
+  .g::before {
+    content: "Partidos Ganados:";
+    padding-right: 40px;
+    font-weight: 900;
+    color: #ccff00;
+  }
+  .p::before {
+    content: "Partidos Perdidos:";
+    padding-right: 40px;
+    font-weight: 900;
+    color: #ccff00;
+  }
+  .sg::before {
+    content: "Set Ganados:";
+    padding-right: 40px;
+    font-weight: 900;
+    color: #ccff00;
+  }
+  .sp::before {
+    content: "Set Perdidos:";
+    padding-right: 40px;
+    font-weight: 900;
+    color: #ccff00;
+  }
+}
+
+/*-----------------------RANKING--------------------------*/
+
+@media only screen and (max-width: 700px) {
+  .titulo-ranking {
+    font-size: 50px;
+  }
+  .subtitulo-ranking {
+    font-size: 30px;
+  }
+  .table-r {
+    border: 3px solid rgb(3, 0, 88);
+  }
+  .table-r tr {
+    display: flex;
+    flex-direction: column;
+  }
+  .table-r thead {
+    display: none;
+  }
+  .table-r .jugador {
+    width: 90vw;
+  }
+  .table-r .posicion,
+  .table-r .puntos,
+  .table-r .jugador {
+    text-align: left;
+    padding-left: 20px;
+  }
+  .jugador::before {
+    content: "Jugador:";
+
+    padding-right: 40px;
+    font-weight: 900;
+    color: #ccff00;
+  }
+  .posicion::before {
+    content: "Posicion:";
+    font-size: 20px;
+    padding-right: 40px;
+    font-weight: 900;
+    color: #ccff00;
+  }
+  .puntos::before {
+    content: "Puntos:";
+    padding-right: 50px;
+    font-weight: 900;
+    color: #ccff00;
+  }
+}
+
+/*-----------------------ESCUELA--------------------------*/
+
+@media only screen and (max-width: 720px) {
+  .container-consulta {
+    display: grid;
+    grid-template-areas: "profe1" "consulta1" "profe2" "consulta2";
+    grid-template-columns: 1fr;
+  }
+  .g1 {
+    grid-area: profe1;
+  }
+  .g3 {
+    grid-area: consulta1;
+  }
+  .g2 {
+    grid-area: profe2;
+  }
+  .g4 {
+    grid-area: consulta2;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .consult {
+    width: 250px;
+  }
+}
+
+/*-----------------------TIENDA--------------------------*/
+@media only screen and (max-width: 1000px) {
+  .cont-color:hover {
+    transition: 0.5s;
+    background-color: #1a1a1a;
+  }
+  .contenedor-seccion {
+    background: #1a1a1a;
+    box-shadow: 15px 12px 21px -15px #ffffff38;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .titulo-tienda {
+    font-size: 60px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .contenedor {
+    transform: scale(0.8);
+    margin-top: -250px;
+    margin-bottom: -270px;
+  }
 }

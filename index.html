@@ -18,15 +18,23 @@
     <link rel="stylesheet" href="css/responsive.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <title>Circuito Chico</title>
   </head>
 
   <body>
+
+    <section class="probando">
     <header id="boxHeader" class="header">
       <a id="boxLogo" href="#" class="logo logo-index"> Circuito 
       <span class="chico">Chico</span></a>
+
+      <label for="check"  class="icons">
+        <i class='bx bx-menu' ></i>
+      </label>
+    </section>
 
       <nav class="navbar">
         <div>
@@ -60,13 +68,13 @@
 
         </div>
         <input type="checkbox" id="check" class="checkbox">
-        <label for="check" class="icons">
+        
             <i class='bx bx-menu' style='color:#ffffff' id="menu-icon"></i>                                    // Arreglar SEO
             <i class='bx bx-x' style='color:#ffffff'  id="close-icon"></i>
         </label>
     </header>-->
     <div class="efecto"></div>
-    <div class="inscripcion">
+    <div id="insBoton" class="inscripcion">
       <a class="inscribite" href="pages/inscripcion/inscripcion.html"
         >Inscribite <span>A</span><span>C</span><span>Á</span></a
       >
@@ -99,8 +107,11 @@
       <h1 id="1" class="h1f">Fake</h1>
 
       <!----------------------------PRIMER TORNEO 25 y 26 DE AGOSTO------------------------------------------------------------->
-
-      <h2 class="titulo-index" data-aos="fade-up">Torneo 8va - Caballeros</h2>
+      <div class="box-titulo">
+        <h2 class="titulo-index" data-aos="fade-up">Torneo 8va</h2>
+        <h2 class="titulo-index guion" data-aos="fade-up">-</h2>
+        <h2 class="titulo-index" data-aos="fade-up">Caballeros</h2>
+      </div>
 
       <h3
         class="d-flex justify-content-center align-items-center subtitulo-index"
@@ -131,7 +142,11 @@
         </a>
       </section>
       <!----------------------------------------TOP 5 ------------------------------------------------------------------------>
-      <section class="top5-container" data-aos="fade-up">
+      <div class="box-titulo">
+        <h2 class="titulo-index guion" data-aos="fade-up">Top 5</h2>
+        <h2 class="titulo-index" data-aos="fade-up">Jugadores</h2>
+      </div>
+      <section class="top5-container">
         <div class="top5-container-seccion">
           <div class="top5-container-seccion-card">
             <h2 class="top5-posicion">01</h2>
@@ -183,8 +198,11 @@
         </div>
       </section>
       <!----------------------------PRIMER TORNEO 5 y 6 DE AGOSTO------------------------------------------------------------->
-
-      <h2 class="titulo-index" data-aos="fade-up">Torneo 7ma - Caballeros</h2>
+      <div class="box-titulo">
+        <h2 class="titulo-index">Torneo 7ma</h2>
+        <h2 class="titulo-index guion">-</h2>
+        <h2 class="titulo-index">Caballeros</h2>
+      </div>
 
       <h3
         class="d-flex justify-content-center align-items-center subtitulo-index"
@@ -220,7 +238,11 @@
       </section>
 
       <!----------------------------PRIMER TORNEO 15 y 16 DE JULIO------------------------------------------------------------->
-      <h2 class="titulo-index" data-aos="fade-up">Torneo 7ma - Caballeros</h2>
+      <div class="box-titulo">
+        <h2 class="titulo-index" data-aos="fade-up">Torneo 7ma</h2>
+        <h2 class="titulo-index guion" data-aos="fade-up">-</h2>
+        <h2 class="titulo-index" data-aos="fade-up">Caballeros</h2>
+      </div>
       <h3
         class="d-flex justify-content-center align-items-center subtitulo-index"
         data-aos="fade-up"
@@ -249,19 +271,19 @@
           <div class="grid-texto-center"><p>Galería</p></div>
         </a>
       </section>
+      <section class="text-move">
+        <div class="texto-move">
+          <p>
+            CIRCUITO CHICO
+            <span> CIRCUITO CHICO</span>
+            CIRCUITO CHICO
+            <span> CIRCUITO CHICO</span>
+            CIRCUITO CHICO
+            <span> CIRCUITO CHICO</span>
+          </p>
+        </div>
+      </section>
     </main>
-    <section class="text-move">
-      <div class="texto-move">
-        <p>
-          CIRCUITO CHICO
-          <span> CIRCUITO CHICO</span>
-          CIRCUITO CHICO
-          <span> CIRCUITO CHICO</span>
-          CIRCUITO CHICO
-          <span> CIRCUITO CHICO</span>
-        </p>
-      </div>
-    </section>
     <footer class="footer">
       <div class="footer-nav">
         <a class="footer-hijo" href="index.html">INICIO</a>
@@ -273,19 +295,22 @@
         <a class="footer-hijo" href="pages/galeria/galeria.html">GALERÍA</a>
       </div>
       <div class="footer-carousel">
-        <a
-          class="carousel-enlace"
-          href="images/banner/banner1.png"
-          target="_blank"
-        >
-          <!-- arreglar el enlace para que sea por cada foto y no por carousell -->
-          <div class="carousel-publi">
-            <img src="images/banner/banner1.png" alt="Banner" />
-          </div>
-          <div class="carousel-publi">
-            <img src="images/banner/banner2.png" alt="Banner" />
-          </div>
-        </a>
+        <div class="carousel-enlace">
+          <a
+            class="carousel-publi"
+            href="images/banner/banner1.png"
+            target="_blank"
+          >
+            <img class="1" src="images/banner/banner1.png" alt="Banner" />
+          </a>
+          <a
+            class="carousel-publi"
+            href="images/banner/banner2.png"
+            target="_blank"
+          >
+            <img class="2" src="images/banner/banner2.png" alt="Banner" />
+          </a>
+        </div>
       </div>
       <div class="footer-enlaces">
         <a
@@ -293,10 +318,10 @@
           href="https://www.instagram.com/circuito.chico.1/"
           target="_blank"
         >
-          .<img class="imagen" src="images/iconos/instagram.png" alt=""
+          .<img src="images/iconos/instagram2.png" alt=""
         /></a>
         <a class="enls" href="https://web.whatsapp.com" target="_blank">
-          <img src="images/iconos/whatsapp.png" alt="" />.</a
+          <img src="images/iconos/whatsapp2.png" alt="" />.</a
         >
       </div>
       <div class="designed">

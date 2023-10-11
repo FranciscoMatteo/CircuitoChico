@@ -212,7 +212,7 @@ div a p {
 /*--------------------------MAIN------------------------*/
 /*------------------------------------------------------*/
 
-h1 {
+.titulo-tienda {
   display: flex;
   margin: 0 auto;
   justify-content: center;
@@ -221,13 +221,15 @@ h1 {
   font-size: 80px;
   transition: 0.3s;
   padding-top: 30px;
-  /*Responsive el padding top*/
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-h1:hover {
+.titulo-tienda:hover {
   color: #ccff00;
 }
 
-h3 {
+.store1 {
   font-family: "Oswald";
   color: #fff;
   font-size: 30px;
@@ -236,10 +238,10 @@ h3 {
   padding: 5px;
   margin-bottom: 0px;
 }
-h4 {
+.subtitulo-tienda {
   font-family: "Oswald";
   color: #fff;
-  font-size: 25px;
+  font-size: 30px;
   display: flex;
   justify-content: center;
   padding-top: 60px;
@@ -301,7 +303,7 @@ h4 {
   align-items: center;
   text-align: center;
   border-radius: 20px;
-  margin: 10px;
+  margin: 20px;
   background-color: #1a1a1a;
   background: linear-gradient(
     to bottom,
@@ -327,23 +329,17 @@ h4 {
   transition: 1.2s;
   transform: scale(1.1);
 }
-.carta h2:hover > .img-tienda {
+.item-tienda:hover > .img-tienda {
   transition: 1.2s;
   transform: scale(1.1);
 }
-.contenedor-seccion .carta h2 {
+.item-tienda {
   margin: 15px 0px;
-  font-size: 28px;
+  font-size: 25px;
   color: #fff;
   font-family: "Konkhmer Sleokchher";
 }
-.contenedor-seccion .carta p {
-  font-size: 16px;
-  line-height: 1.5;
-  padding: 0px 10px;
-  margin-bottom: 5px;
-  font-family: "Roboto";
-}
+
 .boton-wp {
   display: flex;
   color: #ccff00;
@@ -366,8 +362,6 @@ h4 {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-/* border-right: 1px solid #ffffff23;
-  border-left: 1px solid #ffffff23; */
 
 /* ------------------------FOOTER ----------------------*/
 
@@ -402,12 +396,6 @@ h4 {
   background-color: #161616;
   border-radius: 7px;
   transition: all 0.3s linear;
-}
-
-@media only screen and (max-width: 730px) {
-  .footer-nav {
-    justify-content: space-around;
-  }
 }
 
 /* ------------------------FOOTERbanner ----------------------*/
@@ -461,14 +449,6 @@ h4 {
     opacity: 0;
   }
 }
-@media only screen and (max-width: 500px) {
-  .footer-carousel {
-    height: 150px;
-  }
-  .carousel-publi {
-    height: 150px;
-  }
-}
 
 /* ------------------------FOOTERenlaces ----------------------*/
 
@@ -485,30 +465,19 @@ h4 {
 .enls {
   height: 30px;
 }
+
 .footer-enlaces img {
   margin: 40px;
   width: 50px;
-  filter: drop-shadow(0px 0px 15px white) drop-shadow(0px 0px 15px white);
+  filter: invert(60%);
   height: auto;
   object-fit: cover;
   position: relative;
-  transition: filter 0.5s linear;
+  transition: filter 0.3s linear;
 }
 .enls:hover > img {
-  filter: drop-shadow(0px 0px 20px rgb(255, 255, 255))
-    drop-shadow(-5px 5px 10px rgb(255, 255, 255))
-    drop-shadow(5px -5px 10px rgb(255, 255, 255));
-  transition: filter 0.5s linear;
-}
-
-@media only screen and (max-width: 500px) {
-  .footer-enlaces {
-    height: 150px;
-    margin-top: 30px;
-  }
-  .footer-enlaces img {
-    width: 30px;
-  }
+  filter: invert(0%);
+  transition: filter 0.3s linear;
 }
 
 .designed {
@@ -533,10 +502,4 @@ h4 {
 .designed a:hover > p {
   opacity: 1;
   transition: all 0.4s linear;
-}
-
-@media only screen and (max-width: 500px) {
-  .designed a p {
-    font-size: 10px;
-  }
 }
